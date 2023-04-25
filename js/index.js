@@ -1902,6 +1902,9 @@ window.onload = async function () {
         };
 
         ABTOPhone.onCallCleared = function (id) {
+
+            console.log("33")
+
             vistaLlamada.style.display = "none";
             /* alert("LLAMADA LIMPIADA?") */
             ////////////////////////////
@@ -2005,28 +2008,15 @@ window.onload = async function () {
         */
         btnAccept = document.getElementById("btnAccept");
         btnAccept.onclick = function () {
-            debugger;
             setRemoteMedia(callID);
-            debugger;
 
             ABTOPhone.accept(callID);
-            debugger;
-
+            alert(callID)
             btnsEntrante.style.display = "none";
-            debugger;
-
             btnsEstablecida.style.display = "block";
-            debugger;
-
             stopRinger();
-            debugger;
-
             showIncomingCall(null);
-            debugger;
-
             vistaLlamada.style.display = "block";
-            debugger;
-
         };
 
         btnReject = document.getElementById("btnReject");
@@ -2131,7 +2121,7 @@ window.onload = async function () {
         var holded = $(".call-panel .time");
         var onhold = $(".onhold"); */
         
-        console.log("BTN HOLD2",btnHold)
+        console.log("BTN HOLD",btnHold)
         if (!status) {
             if (btnHold.classList.contains("white-bkg")) {
                 btnHold.classList.remove("white-bkg");
@@ -2196,7 +2186,7 @@ window.onload = async function () {
         if (from) {
             vistaLlamada.style.display = "block";
             btnsEntrante.style.display = "block";
-            btnsEstablecida.style.display = "block";
+            btnsEstablecida.style.display = "none";
             //from = sip:6002@dominioprueba.citoapp.io
             const extension = from.split("@")[0].split(":")[1];
             const residencia = residencias.find((residencia) => residencia.extension == extension)
