@@ -2181,14 +2181,12 @@ window.onload = async function () {
     function showIncomingCall(from) {
         if (from) {
 
-            console.log("AA")
             vistaLlamada.style.display = "block";
             btnsEntrante.style.display = "block";
             btnsEstablecida.style.display = "none";
             //from = sip:6002@dominioprueba.citoapp.io
             const extension = from.split("@")[0].split(":")[1];
             const residencia = residencias.find((residencia) => residencia.extension == extension)
-            console.log("BB")
 
             document.getElementsByClassName('call-ext-name')[0].textContent = residencia.familia;
             document.getElementsByClassName('call-ext-account')[0].textContent = residencia.extension;
@@ -2202,11 +2200,11 @@ window.onload = async function () {
             btnTransfer.disabled = true;
             btnAccept.disabled = false;
             btnReject.disabled = false; */
-            console.log("CC")
 
 
             if ("Notification" in window && Notification.permission === "granted") {
                 console.log("DD")
+                //entra la tabla
 
                 if (__nt && __nt.close) {
                     console.log("FF")
@@ -2214,14 +2212,16 @@ window.onload = async function () {
                     __nt.close();
                 }
                 console.log("GG")
-
-                __nt = new Notification('Incoming call', { body: 'Incoming call from ' + from + '.' });
+                //entra la tabla
+                //error!!!
+                __nt = ServiceWorkerRegistration.showNotification('Incoming call', { body: 'Incoming call from ' + from + '.' });
                 console.log("HH")
 
                 //__nt.onclose = function () { __nt = null; };
             }
 
             console.log("II")
+            //entra desktop bien
 
         } else {
             console.log("JJ")
