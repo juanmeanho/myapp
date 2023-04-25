@@ -2117,7 +2117,7 @@ window.onload = async function () {
         var holded = $(".call-panel .time");
         var onhold = $(".onhold"); */
         
-        console.log("BTN HOLD1",btnHold)
+        console.log("BTN HOLD2",btnHold)
         if (!status) {
             if (btnHold.classList.contains("white-bkg")) {
                 btnHold.classList.remove("white-bkg");
@@ -2182,7 +2182,7 @@ window.onload = async function () {
         if (from) {
             vistaLlamada.style.display = "block";
             btnsEntrante.style.display = "block";
-            btnsEstablecida.style.display = "none";
+            btnsEstablecida.style.display = "block";
             //from = sip:6002@dominioprueba.citoapp.io
             const extension = from.split("@")[0].split(":")[1];
             const residencia = residencias.find((residencia) => residencia.extension == extension)
