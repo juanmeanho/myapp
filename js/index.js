@@ -2005,6 +2005,8 @@ window.onload = async function () {
         */
         btnAccept = document.getElementById("btnAccept");
         btnAccept.onclick = function () {
+            alert("accepted2")
+
             setRemoteMedia(callID);
 
             ABTOPhone.accept(callID);
