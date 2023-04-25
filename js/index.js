@@ -2008,7 +2008,6 @@ window.onload = async function () {
             setRemoteMedia(callID);
 
             ABTOPhone.accept(callID);
-            alert(callID)
             btnsEntrante.style.display = "none";
             btnsEstablecida.style.display = "block";
             stopRinger();
@@ -2118,7 +2117,7 @@ window.onload = async function () {
         var holded = $(".call-panel .time");
         var onhold = $(".onhold"); */
         
-        console.log("BTN HOLD",btnHold)
+        console.log("BTN HOLD1",btnHold)
         if (!status) {
             if (btnHold.classList.contains("white-bkg")) {
                 btnHold.classList.remove("white-bkg");
