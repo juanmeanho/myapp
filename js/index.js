@@ -2180,12 +2180,15 @@ window.onload = async function () {
 
     function showIncomingCall(from) {
         if (from) {
+
+            console.log("AA")
             vistaLlamada.style.display = "block";
             btnsEntrante.style.display = "block";
             btnsEstablecida.style.display = "none";
             //from = sip:6002@dominioprueba.citoapp.io
             const extension = from.split("@")[0].split(":")[1];
             const residencia = residencias.find((residencia) => residencia.extension == extension)
+            console.log("BB")
 
             document.getElementsByClassName('call-ext-name')[0].textContent = residencia.familia;
             document.getElementsByClassName('call-ext-account')[0].textContent = residencia.extension;
@@ -2199,16 +2202,30 @@ window.onload = async function () {
             btnTransfer.disabled = true;
             btnAccept.disabled = false;
             btnReject.disabled = false; */
+            console.log("CC")
+
 
             if ("Notification" in window && Notification.permission === "granted") {
+                console.log("DD")
+
                 if (__nt && __nt.close) {
+                    console.log("FF")
+
                     __nt.close();
                 }
+                console.log("GG")
 
                 __nt = new Notification('Incoming call', { body: 'Incoming call from ' + from + '.' });
+                console.log("HH")
+
                 //__nt.onclose = function () { __nt = null; };
             }
+
+            console.log("II")
+
         } else {
+            console.log("JJ")
+
            /*  document.getElementById('call_status').textContent = "";
 
             btnCall.disabled = false;
@@ -2218,7 +2235,11 @@ window.onload = async function () {
             btnAccept.disabled = true;
             btnReject.disabled = true; */
             vistaLlamada.style.display = "none";
+            console.log("KK")
+
             if (__nt && __nt.close) {
+                console.log("LL")
+
                 __nt.close();
                 __nt = null;
             }
