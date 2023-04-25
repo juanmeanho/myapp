@@ -7,24 +7,6 @@ const btnLogOut = document.getElementById('logOut');
 const btnPerfil = document.getElementById('profile');
 const residencias = []
 
-// function getLocalStream() {
-
-//     alert("aaa")
-//     navigator.mediaDevices
-//       .getUserMedia({ video: false, audio: true })
-//       .then((stream) => {
-//         alert("bbb")
-//         window.localStream = stream;
-//         window.localAudio.srcObject = stream;
-//         window.localAudio.autoplay = true;
-//       })
-//       .catch((err) => {
-//         console.error(`you got an error: ${err}`);
-//       });
-//   }
-  
-//   getLocalStream();
-
 document.getElementById('btnPrincipal').addEventListener('click',()=>{
 
     $('#btnPrincipal').css('color','#fff');
@@ -2026,7 +2008,6 @@ window.onload = async function () {
             setRemoteMedia(callID);
 
             ABTOPhone.accept(callID);
-            alert(callID)
             btnsEntrante.style.display = "none";
             btnsEstablecida.style.display = "block";
             stopRinger();
