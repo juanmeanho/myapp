@@ -2005,16 +2005,28 @@ window.onload = async function () {
         */
         btnAccept = document.getElementById("btnAccept");
         btnAccept.onclick = function () {
-            alert("accepted2")
-
+            debugger;
             setRemoteMedia(callID);
+            debugger;
 
             ABTOPhone.accept(callID);
+            debugger;
+
             btnsEntrante.style.display = "none";
+            debugger;
+
             btnsEstablecida.style.display = "block";
+            debugger;
+
             stopRinger();
+            debugger;
+
             showIncomingCall(null);
+            debugger;
+
             vistaLlamada.style.display = "block";
+            debugger;
+
         };
 
         btnReject = document.getElementById("btnReject");
