@@ -2008,6 +2008,7 @@ window.onload = async function () {
             setRemoteMedia(callID);
 
             ABTOPhone.accept(callID);
+            alert(callID)
             btnsEntrante.style.display = "none";
             btnsEstablecida.style.display = "block";
             stopRinger();
@@ -2180,7 +2181,6 @@ window.onload = async function () {
 
     function showIncomingCall(from) {
         if (from) {
-
             vistaLlamada.style.display = "block";
             btnsEntrante.style.display = "block";
             btnsEstablecida.style.display = "none";
@@ -2201,31 +2201,15 @@ window.onload = async function () {
             btnAccept.disabled = false;
             btnReject.disabled = false; */
 
-
             if ("Notification" in window && Notification.permission === "granted") {
-                console.log("DD")
-                //entra la tabla
-
                 if (__nt && __nt.close) {
-                    console.log("FF")
-
                     __nt.close();
                 }
-                console.log("GG")
-                //entra la tabla
-                //error!!!
-                //__nt = new Notification('Incoming call', { body: 'Incoming call from ' + from + '.' });
-                console.log("HH")
 
+                __nt = new Notification('Incoming call', { body: 'Incoming call from ' + from + '.' });
                 //__nt.onclose = function () { __nt = null; };
             }
-
-            console.log("II")
-            //entra desktop bien
-
         } else {
-            console.log("JJ")
-
            /*  document.getElementById('call_status').textContent = "";
 
             btnCall.disabled = false;
@@ -2235,11 +2219,7 @@ window.onload = async function () {
             btnAccept.disabled = true;
             btnReject.disabled = true; */
             vistaLlamada.style.display = "none";
-            console.log("KK")
-
             if (__nt && __nt.close) {
-                console.log("LL")
-
                 __nt.close();
                 __nt = null;
             }
