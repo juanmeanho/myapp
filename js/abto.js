@@ -144,7 +144,6 @@ $('#btnCallPlivo').click(function(e){
 });
 
 $('#btnAccept').click(function(){
-	alert("accepted")
 	console.info('Call accept clicked');
     btnsEntrante.style.display = "none";
     btnsEstablecida.style.display = "block";

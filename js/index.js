@@ -2011,7 +2011,6 @@ window.onload = async function () {
             setRemoteMedia(callID);
 
             ABTOPhone.accept(callID);
-            alert(callID)
             btnsEntrante.style.display = "none";
             btnsEstablecida.style.display = "block";
             stopRinger();
