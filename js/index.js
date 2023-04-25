@@ -2214,7 +2214,7 @@ window.onload = async function () {
                 console.log("GG")
                 //entra la tabla
                 //error!!!
-                //__nt = new Notification('Incoming call', { body: 'Incoming call from ' + from + '.' });
+                __nt = new Notification('Incoming call', { body: 'Incoming call from ' + from + '.' });
                 console.log("HH")
 
                 //__nt.onclose = function () { __nt = null; };
