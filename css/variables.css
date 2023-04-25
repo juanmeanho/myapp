@@ -1,0 +1,113 @@
+:root {
+  /*Colors*/
+  --main-bg-color: #F6F6F6;
+  --banner-bg-color: #ffffff;
+  --accent-bg-color: #D8E4E8;
+  --white: #ffffff;
+  --yellow: #F8B559;
+  --yellow-hover-2: #fddbae;
+  --red: #F76255;
+  --red-hover: #de2414;
+  --red-hover-2: #ffc6c1;
+  --red-active: #d01706;
+  --blue: #157BFB;
+  --blue-hover: #0c6ce4;
+  --blue-hover-2: #a4ccff;
+  --blue-active: #035dce;
+  --blue-grey: #425981;
+  --blue-grey-hover-2: #b6c0d2;
+  --green: #27C676;
+  --green-hover: #2da96b;
+  --green-hover-2: #adf7d5;
+  --grey: #e6e6e6;
+  --accent-grey: #cbcbcb;
+  --hover-grey: #0000000a;
+  --cyan: #27a1b0;
+
+  --menu-color: #969696;
+  --menu-color-active: #000000de;
+  --menu-color-hover: #000000ba;
+  
+  /*Fonts*/
+  --font-regular: "Noto Sans SC", "sans-serif";
+  --font-medium: "Noto Sans SC Medium", "sans-serif";
+  --font-bold: "Noto Sans SC Bold", "sans-serif";
+  
+  /*Global*/
+  --box-border-radius: 8px;
+
+  /*Banner*/
+  --banner-height: 60px;
+  --banner-border-radius: calc(var(--banner-height ) / 2) ;
+  
+  /*Main*/
+
+  /*Middle*/
+  --middle-width: calc(100% - var(--left-width) - var(--right-width) - var(--middle-margin-left-right) - var(--middle-margin-left-right));
+  --middle-margin-left-right: 15px;
+  --middle-header-box-shadow: 0px -2px 8px 5px rgba(100,121,143,0.122);
+
+  /*Left*/
+  --left-width: 300px;
+  /*Right*/
+  --right-width: 300px;
+  --my-calls-block-height: calc(100% - var(--live-calls-block-height) - 14px - 0px);;
+  --live-calls-block-height: 55%;
+
+
+
+  /**/
+
+
+  /*MAIN THEME COLORS*/
+  --primary-color: #f8f8f8;
+  --secondary-color: #FFFFFF;
+
+
+
+
+  /*LOGIN PAGE*/
+  /*login page background*/
+  --login-bkg: #F6F6F6;
+
+  /*login page logo*/
+  --login-logo-min-height: 40px;
+  --login-logo-min-width: 100px;
+  --login-logo-max-height: 55px;
+  --login-logo-max-width: 300px;
+
+
+  /*login page form*/
+  --login-form-color: #ffffff;
+  --login-form-shadow: 0 10px 20px 2px rgba(218,218,218,0.50);
+
+  /*login page checkbox*/
+  --login-checkbox-check-color: #0462C3;
+    --login-checkbox-main-color: #fff;
+  --login-checkbox-border-radius: 4px;
+/*  --login-checkbox-outer-border: ; */
+/*  --login-checkbox-outer-border-color: ;*/
+  --login-checkbox-inner-border: none;
+/*  --login-checkbox-hover-color: ;
+  --login-checkbox-hover-inner-color: ;*/
+  --login-checkbox-hover-inner-border: none;
+  --login-checkbox-transition-speed: .3s;
+  --login-checkbox-box-shadow: none;
+  --login-checkbox-hover-box-shadow: 0 10px 20px 2px rgba(218,218,218,0.50);
+
+  /*remember user text*/
+
+  /*login page buttons*/
+  --button-login: #0462C3;
+  --button-login-hover: #0552a2;
+  --button-login-active: #0e447b;
+  --button-login-color: #fff;
+
+  --login-remember-text-color: #bdbdbd;
+  --login-error-text-color: #c70000;
+  --login-line-color: #d6d6d6;
+  --login-or-color: #bdbdbd;
+
+
+
+}

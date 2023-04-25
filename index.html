@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Conserje Web</title>
+    
+
+    <script src="js/preload.js"></script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <link rel="icon" href="img/svgs/logo.svg" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- themefy CSS -->
+    <link rel="stylesheet" href="vendors/themefy_icon/themify-icons.css" />
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="vendors/font_awesome/css/all.min.css" />
+    <link rel="stylesheet" href="vendors/niceselect/css/nice-select.css" />
+    <!-- date picker -->
+     <link rel="stylesheet" href="vendors/datepicker/date-picker.css" />
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.0/signalr.js"></script>
+     <!-- scrollabe  -->
+     <link rel="stylesheet" href="vendors/scroll/scrollable.css" />
+    <!-- datatable CSS -->
+    <link rel="stylesheet" href="vendors/datatable/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="vendors/datatable/css/responsive.dataTables.min.css" />
+    <link rel="stylesheet" href="vendors/datatable/css/buttons.dataTables.min.css" />
+    <!-- metarial icon css -->
+    <link rel="stylesheet" href="vendors/material_icon/material-icons.css" />
+    <!-- <link rel="stylesheet" href="css/chat.css"> -->
+    <link rel="stylesheet" href="css/call.css">
+    <!-- <link rel="stylesheet" href="css/variables.css"> -->
+    <!-- <link rel="stylesheet" href="css/defaults.css"> -->
+
+    <!-- menu css  -->
+    <link rel="stylesheet" href="css/metisMenu.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="vendors/sweetAlerts/sweetalert2.css">
+    <link rel="stylesheet" href="css/style.css" />    
+    <link rel="stylesheet" href="css/colors/default.css" id="colorSkinCSS">
+    <link rel="stylesheet" href="vendors/caleandar-master/css/theme2.css">
+    <link rel="stylesheet" href="css/styleCito.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+<body class="crm_body_bg">
+    
+
+
+<!-- main content part here -->
+ 
+ <!-- sidebar  -->
+ <nav class="sidebar sidebarCito">
+    <div class="logo d-flex justify-content-between">
+        <a class="large_logo" href="index.html"><img src="img/logo_grande.png" alt=""></a>
+        <a class="small_logo" href="index.html"><img src="img/logo_chico.png" alt=""></a>
+        <div class="sidebar_close_icon d-lg-none">
+            <i class="ti-close"></i>
+        </div>
+    </div>
+    
+    <div class="row mb-2 search-side-bar">
+        <div class="column">
+          <div class="row">
+              <div id="search-bar">
+                <span><i class="material-icons">search</i></span>
+                <input placeholder="Apellido, Casa o Departamento" id="search-bar-input">
+              </div>
+            </div>
+        </div>
+    </div>
+     <!-- <ul id="sidebar_menu">
+        <li class="">
+            <a class="has-arrow" href="#" aria-expanded="false">
+                <div class="nav_icon_small">
+                    <img src="img/user.png" alt="">                    
+                </div>
+                <div class="nav_title">
+                    <span>Araya Guzman </span><br>
+                    <span>5000 </span>
+                </div>
+            </a>
+                <ul>
+                    <li><a>LLamar</a></li>
+                    <li><a>Mensaje</a></li>
+                </ul>
+            
+        </li>
+        <li class="">
+            <a class="has-arrow" href="#" aria-expanded="false">
+                <div class="nav_icon_small">
+                    <img src="img/user.png" alt="">                    
+                </div>
+                <div class="nav_title">
+                    <span>Araya Josefa </span><br>
+                    <span>200 </span>
+                </div>
+            </a>
+            <ul>
+                <li><a>LLamar</a></li>
+              <li><a>Mensaje</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a class="has-arrow" href="#" aria-expanded="false">
+                <div class="nav_icon_small">
+                    <img src="img/user.png" alt="">                    
+                </div>
+                <div class="nav_title">
+                    <span>Araya Test </span><br>
+                    <span>4000 </span>
+                </div>
+            </a>
+            <ul>
+              <li><a>LLamar</a></li>
+              <li><a>Mensaje</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            
+        </li>
+        
+
+      </ul> -->
+      <!-- <ul class="list-group">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul> -->
+      <ul class="list-group borderless" id="menuCall">
+        <!--
+        <li class="list-group-item list-group-item-action" style="border: none" >
+           
+           <div id="contenedor">
+                <span class="pull-left mr_10">
+                    <img src="img/user.png"  class="img-reponsive img-rounded" />
+                </span>
+                <div class="palabra">
+                    <span>Cesar P</span>
+            
+                    <div class="letra">
+                        <span>5000</span>
+                    </div>
+
+                    <div class="dropdown dropend iconD">
+                        <i class="fa fa-ellipsis-v" style="cursor: pointer;" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                        <ul class="dropdown-menu ">
+                          <li><a class="dropdown-item menu-Llamar" value="1000@voice1002.citoapp.io" href="#">Llamar</a></li>
+                          <li><a class="dropdown-item menu-Mensaje" href="#">Mensaje</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </li>
+        <li class="list-group-item list-group-item-action" style="border: none" >
+           
+            <div id="contenedor">
+                 <span class="pull-left mr_10">
+                     <img src="img/user.png"  class="img-reponsive img-rounded" />
+                 </span>
+                 <div class="palabra">
+                     <span>Fernando P</span>
+             
+                     <div class="letra">
+                         <span>200</span>
+                     </div>
+ 
+                     <div class="dropdown dropend iconD">
+                         <i class="fa fa-ellipsis-v" style="cursor: pointer;" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                         <ul class="dropdown-menu ">
+                           <li><a class="dropdown-item menu-Llamar" value="1003@voice1002.citoapp.io" href="#">Llamar</a></li>
+                           <li><a class="dropdown-item menu-Mensaje" href="#">Mensaje</a></li>
+                         </ul>
+                     </div>
+                 </div>
+                 
+             </div>
+             
+         </li>
+         <li class="list-group-item list-group-item-action" style="border: none" >
+           
+            <div id="contenedor">
+                 <span class="pull-left mr_10">
+                     <img src="img/user.png"  class="img-reponsive img-rounded" />
+                 </span>
+                 <div class="palabra">
+                     <span>Araya Test</span>
+             
+                     <div class="letra">
+                         <span>400</span>
+                     </div>
+ 
+                     <div class="dropdown dropend iconD">
+                         <i class="fa fa-ellipsis-v" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                         <ul class="dropdown-menu ">
+                           <li><a class="dropdown-item menu-Llamar" href="#">Llamar</a></li>
+                           <li><a class="dropdown-item menu-Mensaje" href="#">Mensaje</a></li>
+                         </ul>
+                     </div>
+                 </div>
+                 
+             </div>
+             
+         </li>
+        -->
+        <!-- <li class="list-group-item list-group-item-action" style="border: none">
+            <span class="pull-left ">
+              <img src="img/user.png"  class="img-reponsive img-rounded" />
+            </span>
+            <span class="nombreD">
+                Texto
+            </span>
+            <span class="numeroD">
+                Texto
+            </span>
+         </li> -->
+    </ul>
+   <!--  <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          The current link item
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
+      </div> -->
+      
+      
+</nav>
+ <!--/ sidebar  -->
+
+
+<section class="main_content dashboard_part large_header_bg">
+        <!-- menu  -->
+    <div class="container-fluid g-0">
+        <div class="row">
+            <div class="col-lg-12 p-0 ">
+                <div class="header_iner d-flex justify-content-between align-items-center">
+                    <div class="sidebar_icon d-lg-none">
+                        <i class="ti-menu"></i>
+                    </div>
+                    <!-- class="line_icon open_miniSide d-none d-lg-block" -->
+                    <div class="drawer">
+                        <img src="img/line_img.png" alt="">
+                    </div>
+                    <!-- <div class="serach_field-area d-flex align-items-center">
+                        <div class="search_inner">
+                            <form action="#">
+                                <div class="search_field">
+                                    <input type="text" placeholder="Search">
+                                </div>
+                                <button type="submit"> <img src="img/icon/icon_search.svg" alt=""> </button>
+                            </form>
+                        </div>
+                    </div> -->
+                    <div class="client-title">
+                        <span id="nombreCliente" class="nombre-cliente"></span>
+                    </div>
+
+                    
+                    <div class="header_right d-flex justify-content-between align-items-center">
+
+
+                        <div class="header_notification_warp d-flex align-items-center">
+                            <li>
+                                <a  href="#"> <img src="img/icon/guest-add.svg" alt="" data-bs-toggle="modal" data-bs-target="#modalAgregarVisitas">
+                                </a>
+                     
+                            </li>    
+
+                            <li>
+                                <a class="bell_notification_clicker" href="#"> <img src="img/icon/opened-exit-door.svg" alt="">
+                                    <!-- <span>2</span> -->
+                                </a>
+                                <!-- Menu_NOtification_Wrap  -->
+                            <div class="Menu_NOtification_Wrap">
+                                <div class="notification_Header text-center">
+                                    <h4>Control de Puertas</h4>
+                                </div>
+                                <div class="Notification_body">
+                                    <!-- single_notify  -->
+                                    <!-- <div class="single_notify d-flex align-items-center">
+                                        <div class="notify_thumb">
+                                            <a href="#"><img src="img/staf/2.png" alt=""></a>
+                                        </div>
+                                        <div class="notify_content">
+                                            <a href="#"><h5>Cool Marketing </h5></a>
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div> -->
+                                    <!-- single_notify  -->
+                                    <!-- <div class="single_notify d-flex align-items-center">
+                                        <div class="notify_thumb">
+                                            <a href="#"><img src="img/staf/4.png" alt=""></a>
+                                        </div>
+                                        <div class="notify_content">
+                                            <a href="#"><h5>Awesome packages</h5></a>
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div> -->
+                                    <!-- single_notify  -->
+                                    <!-- <div class="single_notify d-flex align-items-center">
+                                        <div class="notify_thumb">
+                                            <a href="#"><img src="img/staf/3.png" alt=""></a>
+                                        </div>
+                                        <div class="notify_content">
+                                            <a href="#"><h5>what a packages</h5></a>
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div> -->
+                                    <!-- single_notify  -->
+                                    <!-- <div class="single_notify d-flex align-items-center">
+                                        <div class="notify_thumb">
+                                            <a href="#"><img src="img/staf/2.png" alt=""></a>
+                                        </div>
+                                        <div class="notify_content">
+                                            <a href="#"><h5>Cool Marketing </h5></a>
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div> -->
+                                    <!-- single_notify  -->
+                                    <!-- <div class="single_notify d-flex align-items-center">
+                                        <div class="notify_thumb">
+                                            <a href="#"><img src="img/staf/4.png" alt=""></a>
+                                        </div>
+                                        <div class="notify_content">
+                                            <a href="#"><h5>Awesome packages</h5></a>
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div> -->
+                                    <!-- single_notify  -->
+                                    <!-- <div class="single_notify d-flex align-items-center">
+                                        <div class="notify_thumb">
+                                            <a href="#"><img src="img/staf/3.png" alt=""></a>
+                                        </div>
+                                        <div class="notify_content">
+                                            <a href="#"><h5>what a packages</h5></a>
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <!-- <div class="nofity_footer">
+                                    <div class="submit_button text-center pt_20">
+                                        <a href="#" class="btn_1">See More</a>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <!--/ Menu_NOtification_Wrap  -->
+                            </li>
+                        </div>
+                        <div class="profile_info">
+                            <img src="img/user.png" alt="#">
+                            <div class="profile_info_iner">
+                                <div class="profile_author_name">
+                                    <!-- <p>Neurologist </p> -->
+                                    <h5></h5>
+                                </div>
+                                <div class="profile_info_details">
+                                    <a href="#" id="profile">Perfil</a>
+                                    <!-- <a href="#">Settings</a> -->
+                                    <a href="login.html" id="logOut">Cerrar Sesión</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                    <!-- <div class="header_right d-flex justify-content-between align-items-center">                        
+                        <div class="profile_info">
+                            <img src="img/client_img.png" alt="#">
+                            <div class="profile_info_iner">
+                                <div class="profile_author_name">
+                                    <p>Neurologist </p>
+                                    <h5></h5>
+                                </div>
+                                <div class="profile_info_details">
+                                    <a href="#" id="profile">Perfil</a>
+                                    <a href="#">Settings</a>
+                                    <a href="login.html" id="logOut">Cerrar Sesión</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ menu  -->
+    <div class="main_content_iner overly_inner ">
+        <div class="column">
+            
+            <button type="button" id="btnPrincipal" class="btn btn-outline-primary rounded-pill mb-3 mr_5"><i class="fas fa-home me-2"></i>Principal</button>            
+            <button type="button" id="btnVisitas" class="btn btn-outline-primary rounded-pill mb-3 mr_5"><i class="fas fa-id-card me-2"></i>Visitas</button>
+            <button type="button" id="btnInvitados" class="btn btn-outline-primary rounded-pill mb-3 mr_5"><i class="fas fa-address-card me-2"></i>Invitados</button>
+            <button type="button" id="btnLlamadas" class="btn btn-outline-primary rounded-pill mb-3 mr_5"><i class="fas fa-phone me-2"></i>Llamadas</button>            
+            <button type="button" id="btnMensajes" style="display: none;" class="btn btn-outline-primary rounded-pill mb-3 mr_5"><i class="fa fa-message me-2"></i>Mensajes</button>
+            <button type="button" id="btnBuzon" style="display: none;" class="btn btn-outline-primary rounded-pill mb-3 mr_5"><i class="fa-solid fa-inbox me-2"></i>Buzón</button>            
+        </div>
+        <div class="container-fluid p-0 ">
+            <!-- page title  -->
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="white_card mb_20" id="vistaLlamada">
+                        <div class="white_card_header">
+                           <!--  <div class="box_header m-0">
+                                <div class="main-title">
+                                    <h3 class="m-0">Invitaciones del dia</h3>
+                                </div>
+                                <div class="header_more_tool">
+                                    <div class="dropdown">
+                                        <span class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                                          <i class="ti-more-alt"></i>
+                                        </span>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                          <a class="dropdown-item" href="#"> <i class="ti-eye"></i> Action</a>
+                                          <a class="dropdown-item" href="#"> <i class="ti-trash"></i> Delete</a>
+                                          <a class="dropdown-item" href="#"> <i class="fas fa-edit"></i> Edit</a>
+                                          <a class="dropdown-item" href="#"> <i class="ti-printer"></i> Print</a>
+                                          <a class="dropdown-item" href="#"> <i class="fa fa-download"></i> Download</a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="white_card_body paddingCard QA_section">
+                            <video autoplay="autoplay" style="display: none;" id="video_remote"></video>
+                            <div id="call-window" class="card-1 show-call-window mt-3">
+                                <div class="call-window-animation-container">
+                                  <div id="pbx-audio-in-animation" style="opacity: 0;">
+                                    <div class="inner x-y-center"></div> 
+                                    <div class="outer x-y-center"></div>
+                                    <div class="pulse x-y-center"></div>
+                                  </div>
+                        
+                                  <div id="pbx-audio-out-animation" class="x-center">
+                                    <div class="inner x-y-center"></div> 
+                                    <div class="outer x-y-center"></div>
+                                    <div class="pulse x-y-center"></div>
+                                  </div> 
+                                </div>  
+                              
+                                <img class="call-ext-img" src="img/user.png">
+                                <div class="call-ext-timer incall-time"></div>
+                                <div class="call-ext-name">Araya Guzman</div>
+                                <div class="call-ext-account">5000</div>
+
+                                <div class="call-window-wrapper">
+                                  <!-- <div class="row"> -->
+                              <!--       <div class="column column-160">
+                                      <span></span>
+                                    </div> -->
+                                    <!-- <div class="column column-100-200"> -->
+                                      <div id="active-call-controls" class="x-center">
+                                        <!-- <button class="circle-36 green-bkg call-end toolCall" id="btnAccept">
+                                            <i class="material-icons">call</i>
+                                            <span class="tooltiptext tooltip-bottom">Contestar</span>
+                                        </button>
+                                        <button class="circle-36 red-bkg call-end toolCall" id="btnReject">
+                                            <i class="material-icons">call_end</i>
+                                            <span class="tooltiptext tooltip-bottom">Colgar</span>
+                                        </button>   
+                                        <button class="circle-36 red-bkg call-end toolCall" id="btnHangUp">
+                                          <i class="material-icons">call_end</i>
+                                          <span class="tooltiptext tooltip-bottom">Colgar</span>
+                                        </button>                                        
+                                        <button class="circle-36 white-bkg mute toolCall">
+                                          <i class="material-icons">mic_off</i>
+                                          <span class="tooltiptext tooltip-bottom">Silenciar</span>
+                                        </button>
+                                        <button class="circle-36 white-bkg call-hold toolCall">
+                                          <i class="material-icons">phone_paused</i>
+                                          <span class="tooltiptext tooltip-bottom">Hold call</span>
+                                        </button>     
+                                        <button class="circle-36 white-bkg show-dial-pad toolCall">
+                                          <i class="material-icons">dialpad</i>
+                                          <span class="tooltiptext tooltip-bottom">Dial pad</span>
+                                        </button> -->
+                                        <!-- <p>Close transfer view</p> -->
+                                        <div id="llamadaEntrante">
+                                            <button class="circle-36 green-bkg call-end toolCall" id="btnAccept">
+                                                <i class="material-icons">call</i>
+                                                <span class="tooltiptext tooltip-bottom">Contestar</span>
+                                            </button>
+                                            <button class="circle-36 red-bkg call-end toolCall" id="btnReject">
+                                                <i class="material-icons">call_end</i>
+                                                <span class="tooltiptext tooltip-bottom">Rechazar</span>
+                                            </button>
+                                        </div>
+                                        
+                                        <div id="llamadaCurso">
+                                            <button class="circle-36 red-bkg call-end toolCall" id="btnHangUp">
+                                                <i class="material-icons">call_end</i>
+                                                <span class="tooltiptext tooltip-bottom">Colgar</span>
+                                              </button>                                        
+                                              <button class="circle-36 white-bkg mute toolCall button-on" id="btnMute">
+                                                <i class="material-icons">mic_off</i>
+                                                <span class="tooltiptext tooltip-bottom">Silenciar</span>
+                                              </button>
+                                              <button class="circle-36 white-bkg call-hold toolCall" id="btnHold">
+                                                <i class="material-icons">phone_paused</i>
+                                                <span class="tooltiptext tooltip-bottom">Hold call</span>
+                                              </button>     
+                                              <button class="circle-36 white-bkg show-dial-pad toolCall">
+                                                <i class="material-icons">dialpad</i>
+                                                <span class="tooltiptext tooltip-bottom">Dial pad</span>
+                                              </button>
+                                        </div>
+                                      </div>
+                                    <!-- </div> -->
+                                  <!-- </div> -->
+                                </div>
+                        
+                                <!-- Transfer window -->
+                                <div id="call-att-view">
+                                  <span class="search-icon"><i class="material-icons blue">search</i></span>
+                                  <input type="" name="" placeholder="Type phone number or contact name from address book">
+                                  <button id="transfer-input-number" class="button">Transfer</button>
+                                  <div class="att-bkg x-y-center">
+                                    <img src="img/call_transfer.png" class="">
+                                    <p>Type phone number or name from address book, OR drag and drop an extension here</p>
+                                  </div>
+                                </div>
+                        
+                                <!-- dialpad window -->
+                               <!--  <div id="call-dial-pad-view">
+                                  <div id="dial-pad">
+                                    <div class="row" style="position: relative;">
+                                      <span class="pad-icon"><i class="material-icons blue">dialpad</i></span>
+                                      <input type="" class="dial-input" id="dial-pad-input" readonly="">
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-4">
+                                        <button class="dial-1" value="1">
+                                          <div class="number">1</div>
+                                          <div class="letters"></div>
+                                        </button>
+                                      </div>
+                                      <div class="col-4">
+                                        <button class="dial-2" value="2">
+                                          <div class="number">2</div>
+                                          <div class="letters">ABC</div>
+                                        </button>
+                                      </div>
+                                      <div class="col-4">
+                                        <button class="dial-3" value="3">
+                                          <div class="number">3</div>
+                                          <div class="letters">DEF</div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-4">
+                                        <button class="dial-4" value="4">
+                                          <div class="number">4</div>
+                                          <div class="letters">GHI</div>
+                                        </button>
+                                      </div>
+                                      <div class="col-4">
+                                        <button class="dial-5" value="5">
+                                          <div class="number">5</div>
+                                          <div class="letters">JKL</div>
+                                        </button>
+                                      </div>
+                                      <div class="col-4">
+                                        <button class="dial-6" value="6">
+                                          <div class="number">6</div>
+                                          <div class="letters">MNO</div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-4">
+                                        <button class="dial-7" value="">
+                                          <div class="number">7</div>
+                                          <div class="letters">PQRS</div>
+                                        </button>
+                                      </div>
+                                      <div class="col-4">
+                                        <button class="dial-8">
+                                          <div class="number">8</div>
+                                          <div class="letters">TUV</div>
+                                        </button>
+                                      </div>
+                                      <div class="col-4">
+                                        <button class="dial-9">
+                                          <div class="number">9</div>
+                                          <div class="letters">WXYZ</div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-4">
+                                        <button class="dial-star">
+                                          <div class="number">*</div>
+                                          <div class="letters"></div>
+                                        </button>
+                                      </div>
+                                      <div class="col-4">
+                                        <button class="dial-0">
+                                          <div class="number">0</div>
+                                          <div class="letters"></div>
+                                        </button>
+                                      </div>
+                                      <div class="col-4">
+                                        <button class="dial-pound">
+                                          <div class="number">#</div>
+                                          <div class="letters"></div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <button class="dial-plus">
+                                        <div class="number">+</div>
+                                        <div class="letters"></div>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div> -->
+                        
+                                <!-- park orbits -->
+                                <div id="park-orbits-list" class="scrollbar">
+                                  <div class="orbits scrollbar"></div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="white_card_Visitas card_height_100 mb_30">
+                        <div class="white_card_Invitados">
+                            <div class="principalVista">
+                                <div class="row">
+                                    <div class="col-xl-12 mb_50">
+                                                <div class="box dashboard-status">
+                                                    <div class="row">
+                                                  <div class="col-3">
+                                                    <div class="stat">
+                                                      <div class="stat-value total-calls">0</div>
+                                                      <div class="stat-name">Llamadas <br class="breakline"> recientes</div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-3">
+                                                    <div class="stat">
+                                                      <div class="stat-value inbound-calls">0</div>
+                                                      <div class="stat-name">llamadas <br class="breakline"> entrantes</div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-3">
+                                                    <div class="stat">
+                                                      <div class="stat-value outbound-calls">0</div>
+                                                      <div class="stat-name">llamadas <br class="breakline"> salientes</div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-3">
+                                                    <div class="stat">
+                                                      <div class="stat-value missed-calls">0</div>
+                                                      <div class="stat-name">llamadas <br class="breakline"> perdidas</div>
+                                                    </div>
+                                                  </div>
+                                                    </div>
+                                                  </div>
+                                    </div>
+                                    <div class="col-lg-4 eActuales">
+                                        <div class="white_card card_height_100 mb_30 overflow_hidden">
+                                            <div class="white_card_header">
+                                                <div class="box_header m-0">
+                                                    <div class="main-title">
+                                                        <h3 class="m-0">Vehículos Estacionados</h3>
+                                                    </div>
+                                                    <div class="header_more_tool">
+                                                        <div class="dropdown">
+                                                            <span class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                                                              <i class="ti-more-alt"></i>
+                                                            </span>
+                                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                              <a class="dropdown-item" href="#"> <i class="ti-eye"></i> Action</a>
+                                                              <a class="dropdown-item" href="#"> <i class="ti-trash"></i> Delete</a>
+                                                              <a class="dropdown-item" href="#"> <i class="fas fa-edit"></i> Edit</a>
+                                                              <a class="dropdown-item" href="#"> <i class="ti-printer"></i> Print</a>
+                                                              <a class="dropdown-item" href="#"> <i class="fa fa-download"></i> Download</a>
+                                                            </div>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="white_card_body paddingCard pb-0">
+                                                <div class="Sales_Details_plan">
+                                                    <div class="row" id="estacionamientosV">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 vActuales">
+                                        <div class="white_card card_height_100 mb_30">
+                                            <div class="white_card_header" style="padding: 22px 15px;">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-5">
+                                                        <div class="main-title">
+                                                            <h3 class="m-0">Visitas actuales</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-7">
+                                                        <div class="row justify-content-end">
+                                                            <div class="col-lg-8 d-flex justify-content-end">
+                                                                <div class="header_more_tool">
+                                                                    <div class="dropdown">
+                                                                        <span class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                                                                          <i class="ti-more-alt"></i>
+                                                                        </span>
+                                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                                          <a class="dropdown-item" href="#"> <i class="ti-eye"></i> Action</a>
+                                                                          <a class="dropdown-item" href="#"> <i class="ti-trash"></i> Delete</a>
+                                                                          <a class="dropdown-item" href="#"> <i class="fas fa-edit"></i> Edit</a>
+                                                                          <a class="dropdown-item" href="#"> <i class="ti-printer"></i> Print</a>
+                                                                          <a class="dropdown-item" href="#"> <i class="fa fa-download"></i> Download</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="row justify-content-end">
+                                                    <div class="col-lg-4 mt_20">
+                                                        <select class="nice_Select2 wide" >
+                                                            <option value="1">Show by All</option>
+                                                            <option value="1">Show by A</option>
+                                                            <option value="1">Show by B</option>
+                                                        </select>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                            <div class="white_card_body visitasActuales" id="cuadroVisitas" style="padding: 5px 15px 25px 13px;">
+                                                <!-- <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                                    <div class="user_pils_thumb d-flex align-items-center col-md-6">
+                                                        <div class="thumb_34 mr_15 mt-0"><img class="img-fluid radius_50" src="img/user.png" alt=""></div>
+                                                        <span class="f_s_14 f_w_400 text_color_11">Maximiliano Rodriguez</span>
+                                                    </div>
+                                                    <div class="user_info">
+                                                        5000
+                                                    </div>
+                                                    <div class="action_btns d-flex">
+                                                        <a href="#" class="action_btn"> <i class="fa fa-eye"></i> </a>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="col-lg-4 iActuales">
+                                        <div class="white_card card_height_100 mb_20 ">
+                                            <div class="white_card_header">
+                                                <div class="box_header m-0">
+                                                    <div class="main-title">
+                                                        <h3 class="m-0">Invitaciones del dia</h3>
+                                                    </div>
+                                                    <div class="header_more_tool">
+                                                        <div class="dropdown">
+                                                            <span class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                                                              <i class="ti-more-alt"></i>
+                                                            </span>
+                                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                              <a class="dropdown-item" href="#"> <i class="ti-eye"></i> Action</a>
+                                                              <a class="dropdown-item" href="#"> <i class="ti-trash"></i> Delete</a>
+                                                              <a class="dropdown-item" href="#"> <i class="fas fa-edit"></i> Edit</a>
+                                                              <a class="dropdown-item" href="#"> <i class="ti-printer"></i> Print</a>
+                                                              <a class="dropdown-item" href="#"> <i class="fa fa-download"></i> Download</a>
+                                                            </div>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="white_card_body paddingCard QA_section">
+                                                <div class="QA_table table-responsive ">
+                                                    <!-- table-responsive  class = "lms_table_active"-->
+                                                    <table class="table  p-0" id="tableReal">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Departamento</th>
+                                                                <th scope="col">Hora Cita</th>
+                                                                <th scope="col">Cantidad Personas</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <!-- <tr>
+                                                                <td class="f_s_12 f_w_400 color_text_6">220</td>
+                                                                <td class="f_s_12 f_w_400 color_text_6">10:10</td>
+                                                                <td class="f_s_12 f_w_400 color_text_6">1</td>
+                                                            </tr> -->
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <!-- <div class="llamadasVista_">
+                              <div class="QA_section">
+                                <div class="white_card_Llamada">
+                                  <div class="box_header m-0">
+                                      <div class="main-title">
+                                          <h3 class="m-0">Historial</h3>
+                                      </div>
+                                  </div>
+                              </div> -->
+                                
+                                <!-- <div class="QA_table mb_30">
+                                    <table class="table lms_table_active ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Nombre</th>
+                                                <th scope="col">Residencia</th>
+                                                <th scope="col">Fecha</th>
+                                                <th scope="col">Hora</th>
+                                                <th scope="col">Duración</th>
+                                                <th scope="col">Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"> <a href="#" class="question_content">Elias Araya</a></th>
+                                                <td>5000</td>
+                                                <td>22/6/2022</td>
+                                                <td>16:40:48</td>
+                                                <td>00:02</td>
+                                                <td><div class='action_btns d-flex'><i title='Llamar' class='fas fa-phone  action_btn mr_5'></i><i title='Mensaje' class='fa fa-message action_btn mr_5'></i><i title='Eliminar' class='fas fa-trash action_btn mr_5'></i></div></td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row"> <a href="#" class="question_content">Alexander Riquelmes</a></th>
+                                              <td>3000</td>
+                                                <td>21/2/2022</td>
+                                                <td>12:40:48</td>
+                                                <td>00:42</td>
+                                              <td><div class='action_btns d-flex'><i title='Llamar' class='fas fa-phone  action_btn mr_5'></i><i title='Mensaje' class='fa fa-message action_btn mr_5'></i><i title='Eliminar' class='fas fa-trash action_btn mr_5'></i></div></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"> <a href="#" class="question_content"> Paola Valdivia</a></th>
+                                            <td>2000</td>
+                                            <td>20/5/2022</td>
+                                            <td>12:40:48</td>
+                                            <td>02:02</td>
+                                            <td><div class='action_btns d-flex'><i title='Llamar' class='fas fa-phone  action_btn mr_5'></i><i title='Mensaje' class='fa fa-message action_btn mr_5'></i><i title='Eliminar' class='fas fa-trash action_btn mr_5'></i></div></td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div> -->
+                            </div>
+                            <div class="mensajesVista">
+                                <div class="col-lg-12">
+                                    <div class="messages_box_area">
+                                        <div class="messages_list">
+                                            <div class="white_box ">
+                                                <div class="white_box_tittle list_header">
+                                                    <h4>Chat List</h4>
+                                                </div>
+                                                <div class="serach_field_2">
+                                                    <div class="search_inner">
+                                                        <form active="#">
+                                                            <div class="search_field">
+                                                                <input type="text" placeholder="Search content here...">
+                                                            </div>
+                                                            <button type="submit"> <i class="ti-search"></i> </button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="message_pre_left">
+                                                                <div class="message_preview_thumb">
+                                                                    <img src="img/messages/1.jpg" alt="">
+                                                                    <span class="round-10 bg-danger"></span>
+                                                                </div>
+                                                                <div class="messges_info">
+                                                                    <h4>Travor James</h4>
+                                                                    <p>i know you are doing great</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="messge_time">
+                                                                <span>28th Nov</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="message_pre_left">
+                                                                <div class="message_preview_thumb">
+                                                                    <img src="img/messages/2.jpg" alt="">
+                                                                    <span class="round-10 bg-success"></span>
+                                                                </div>
+                                                                <div class="messges_info">
+                                                                    <h4>Travor James</h4>
+                                                                    <p>i know you are doing great</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="messge_time">
+                                                                <span>28th Nov</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="message_pre_left">
+                                                                <div class="message_preview_thumb">
+                                                                    <img src="img/messages/3.jpg" alt="">
+                                                                    <span class="round-10 bg-danger"></span>
+                                                                </div>
+                                                                <div class="messges_info">
+                                                                    <h4>Travor James</h4>
+                                                                    <p>i know you are doing great</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="messge_time">
+                                                                <span>28th Nov</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="message_pre_left">
+                                                                <div class="message_preview_thumb">
+                                                                    <img src="img/messages/4.jpg" alt="">
+                                                                    <span class="round-10 bg-danger"></span>
+                                                                </div>
+                                                                <div class="messges_info">
+                                                                    <h4>Travor James</h4>
+                                                                    <p>i know you are doing great</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="messge_time">
+                                                                <span>28th Nov</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="message_pre_left">
+                                                                <div class="message_preview_thumb">
+                                                                    <img src="img/messages/1.jpg" alt="">
+                                                                    <span class="round-10 bg-danger"></span>
+                                                                </div>
+                                                                <div class="messges_info">
+                                                                    <h4>Travor James</h4>
+                                                                    <p>i know you are doing great</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="messge_time">
+                                                                <span>28th Nov</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="message_pre_left">
+                                                                <div class="message_preview_thumb">
+                                                                    <img src="img/messages/2.jpg" alt="">
+                                                                    <span class="round-10 bg-success"></span>
+                                                                </div>
+                                                                <div class="messges_info">
+                                                                    <h4>Travor James</h4>
+                                                                    <p>i know you are doing great</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="messge_time">
+                                                                <span>28th Nov</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="message_pre_left">
+                                                                <div class="message_preview_thumb">
+                                                                    <img src="img/messages/3.jpg" alt="">
+                                                                    <span class="round-10 bg-danger"></span>
+                                                                </div>
+                                                                <div class="messges_info">
+                                                                    <h4>Travor James</h4>
+                                                                    <p>i know you are doing great</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="messge_time">
+                                                                <span>28th Nov</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="message_pre_left">
+                                                                <div class="message_preview_thumb">
+                                                                    <img src="img/messages/4.jpg" alt="">
+                                                                    <span class="round-10 bg-danger"></span>
+                                                                </div>
+                                                                <div class="messges_info">
+                                                                    <h4>Travor James</h4>
+                                                                    <p>i know you are doing great</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="messge_time">
+                                                                <span>28th Nov</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                
+                                        </div>
+                                        <div class="messages_chat mb_30">
+                                            <div class="white_box ">
+                                                <div class="single_message_chat">
+                                                    <div class="message_pre_left">
+                                                        <div class="message_preview_thumb">
+                                                            <img src="img/messages/4.jpg" alt="">
+                                                        </div>
+                                                        <div class="messges_info">
+                                                            <h4>Travor James</h4>
+                                                            <p>Yesterday at 6.33 pm</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="message_content_view red_border">
+                                                        <p>
+                                                            Dear KK,
+                                                            <br>
+                                                            Thank you for your update.
+                                                            <br>
+                
+                                                            <span>
+                                                                We do not sell or share your details without your permission. Find
+                                                                out
+                                                                more
+                                                                in our Privacy Policy. Your username, email and password can be
+                                                                updated
+                                                                via
+                                                                your Codepixar Account settings.
+                                                                <br>
+                                                            </span>
+                                                            Regards,
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="single_message_chat sender_message">
+                                                    <div class="message_pre_left">
+                                                        <div class="messges_info">
+                                                            <h4>Agatha Kristy</h4>
+                                                            <p>Yesterday at 6.33 pm</p>
+                                                        </div>
+                                                        <div class="message_preview_thumb">
+                                                            <img src="img/messages/2.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="message_content_view">
+                                                        <p>
+                                                            Dear KK,
+                                                            <br>
+                                                            Thank you for your update.
+                                                            <br>
+                
+                                                            <span>
+                                                                We do not sell or share your details without your permission. Find
+                                                                out
+                                                                more
+                                                                in our Privacy Policy. Your username, email and password can be
+                                                                updated
+                                                                via
+                                                                your Codepixar Account settings.
+                                                                <br>
+                                                            </span>
+                                                            Regards,
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="message_send_field">
+                                                    <input type="text" placeholder="Write your message" value="">
+                                                    <button class="btn_1" type="submit">Send</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buzonVista">                                
+                            </div>
+
+                            <!-- Llamadas -->
+
+                            <div class="llamadasVista">
+                                <div class="QA_section">
+                                    <!-- <div class="white_box_tittle accionResidentes">
+                                        <button type="button" class="btn btn-outline-primary rounded-pill mb-5 mt-3" data-bs-toggle="modal" data-bs-target="#modalAgregarResidentes">Registrar Visita</button>
+                                    </div> -->
+
+                                    <div class="QA_table tablaLlamadas mb_30 table-responsive" style="padding: 25px;">
+                                        <div class="z-indexLlamada">
+                                            <button id="btnLlamadasMobile" type="button" class="btn btn-outline-primary rounded-pill btnLlamadas">
+                                                <span><i class="fa fa-refresh"></i></span>
+                                            </button>
+                                            <button id="btnLlamadasDesktop" style="margin-bottom: -30px;" type="button" class="btn btn-outline-primary rounded-pill btnLlamadas">
+                                                <span><i class="fa fa-refresh"></i></span>
+                                            </button>
+                                        </div>
+                                        <table id="tablaLlamadas" class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th>Origen</th>
+                                                <th>Destino</th>
+                                                <th>Fecha</th>
+                                                <th>Hora</th>
+                                                <th>Duración</th>
+                                                <!-- <th>Acciones</th> -->
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- /Llamadas -->
+
+                            <div class="visitasVista">
+                                <div class="QA_section">
+                                    <!-- <div class="white_box_tittle accionResidentes">
+                                        <button type="button" class="btn btn-outline-primary rounded-pill mb-5 mt-3" data-bs-toggle="modal" data-bs-target="#modalAgregarResidentes">Registrar Visita</button>
+                                    </div> -->
+            
+                                    <div class="QA_table tablaVisitas mb_30 table-responsive" style="padding: 25px;">
+                                        <div class="z-indexVisita">
+                                            <button type="button" class="btn btn-outline-primary rounded-pill btnVisita" data-bs-toggle="modal" data-bs-target="#modalAgregarVisitas">Registrar Visita</button>
+                                        </div>
+                                         <table id="tablaVisitas" class="table table-striped">
+                                            <thead>
+                                              <tr>
+                                                <th style="display: none;">Id</th>
+                                                <th>Nombre Completo</th>
+                                                <th>Rut</th>
+                                                <th>N° res</th>
+                                                <th>Tipo de llegada</th>
+                                                <th>Hora de llegada</th>
+                                                <th>Fecha de llegada</th>
+                                                <th>Hora de salida</th>
+                                                <th>Fecha de salida</th>
+                                                <th>Patente</th>
+                                                <th>Estacionamiento</th>
+                                                <th>Fecha de nacimiento</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="invitadosVista">
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <div class="white_card card_height_100 mb_50">
+                                            <div class="white_card_header">
+                                                <div class="row align-items-center" style="justify-content: center;">
+                                                    <div class="col-lg-4">
+                                                        <div class="main-title">
+                                                            <h3 class="m-0">Invitaciones</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="calendarioAcceso" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 tablaGrupal">
+                                        <div class="white_card card_height_100 mb_50">
+                                            <div class="white_card_header">
+                                                <div class="row align-items-center" style="justify-content: center;">
+                                                    <div style="text-align: center;">
+                                                        <div class="main-title">
+                                                            <h3 class="m-0">Invitaciones grupales</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="white_card_Tablas table-responsive">
+                                                <table class="table table-sm table-hover" id="tableInvitadosGrup" style="font-size: 14px; text-align: center;">
+                                                    <thead>
+                                                      <tr>
+                                                        <th scope="col">Fecha Inicio</th>
+                                                        <th scope="col">Fecha Término</th>
+                                                        <th scope="col">N° Invit</th>
+                                                        <th scope="col">N° Res</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                    
+                                                    </tbody>
+                                                </table>                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 tablaIndividual">
+                                        <div class="white_card card_height_100 mb_50">
+                                            <div class="white_card_header">
+                                                <div class="row align-items-center" style="justify-content: center;">
+                                                    <div style="text-align: center;">
+                                                        <div class="main-title">
+                                                            <h3 class="m-0">Invitaciones Individuales</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="white_card_Tablas table-responsive">
+                                            <table class="table table-sm table-hover" id="tableInvitadosIndiv" style="font-size: 14px; text-align: center;">
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col">Fecha Inicio</th>
+                                                    <th scope="col">Fecha Término</th>
+                                                    <th scope="col">N° Res</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                   
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="white_card card_height_100 mb_50">
+                                            <div class="white_card_header">
+                                                <div class="row align-items-center" style="justify-content: center;">
+                                                    <div style="text-align: center;">
+                                                        <div class="main-title">
+                                                            <h3 class="m-0">Invitaciones</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h5 style=" font-size: 22px; margin-top: 6px;">Buscador</h5>
+                                                <div class="buscador_invitaciones">
+                                                    <input id="buscadorRegistro" class="inputBuscadorAcceso" type="text" placeholder=" Nombre Completo, Rut, Numero Residencia, Patente."> 
+                                                    <button id="btnRegistro" class="btn btnBuscarAcceso"> Buscar</button>             
+                                                    <!-- <button id="btnPop" value="Abrir Pop Up" class="btn-abrir"> Boton</button>   -->
+                                                  </div>
+                                            </div>
+                                            <div class="white_card_Tablas table-responsive">
+                                                <table class="table" id="tableInvitados">
+                                                    <thead>
+                                                      <tr>
+                                                        <th scope="col">Nombre</th>
+                                                        <th scope="col">Apellido</th>
+                                                        <th scope="col">Telefono</th>
+                                                        <th scope="col">Fecha Inicio</th>
+                                                        <th scope="col">Hora Inicio</th>
+                                                        <th scope="col">Fecha Termino</th>
+                                                        <th scope="col">Hora Termino</th>
+                                                        <th scope="col">Tipo Invitación</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                            </div>
+                                        </div>          
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="perfilVista">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="white_card card_height_100 mb_30 pt-4">
+                                            <div class="white_card_body">
+                                                <div class="row">
+                                                    <div class="sidebar-widget author-widget2">
+                                                        <div class="col-md-12 row">
+                                                            <div class="col-2">
+                                                                <img src="img/kor.jpg" style="width: auto; height: 160px; border-radius: 5%;">  
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <ul class="author__contact">
+                                                                    
+                                                                    <li><span ><i class="fas fa-user"></i></span><span id="nombreUser"></span></li>
+                                                                    <li><span class="la la-map-marker"><i class="fa fa-map-marker"></i></span><span id="direccionUser"></span></li>
+                                                                    <li><span class="la la-phone"><i class="fa fa-phone" aria-hidden="true"></i></span><span id="telefonoUser"></span></li>
+                                                                    <li><span class="la la-envelope-o"><i class="fa fa-envelope" aria-hidden="true"></i></span><span id="correoUser"></span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        
+
+                                                        <div class="agent-contact-form-sidebar mt-3">
+                                                            <div >
+                                                                <h4 class="heading pt-0 mb-3">Cambiar contraseña</h4>
+                                                                <div class="section-inforamation">
+                                                                    <div>
+                                                                        <div class="row">
+                                                                            <div class="col-sm-6">
+                                                                                <div class="common_input mb-3">
+                                                                                    <label>Nueva contraseña</label>
+                                                                                    <input id="newPassword" type="password" class="form-control" placeholder="Contraseña">
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--<div class="col-sm-6">
+                                                                                <div class="common_input mb-3">
+                                                                                    <label>Apellido Paterno</label>
+                                                                                    <input id="idPrimerApellido" type="text" class="form-control" placeholder="Apellido Paterno">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-sm-6">
+                                                                                <div class="common_input mb-3">
+                                                                                    <label>Apellido Materno</label>
+                                                                                    <input id="idSegundoApellido" type="text" class="form-control" placeholder="Apellido Materno">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-sm-6">
+                                                                                <div class="common_input mb-3">
+                                                                                    <label>Correo</label>
+                                                                                    <input id="idCorreoAdmin" type="email" class="form-control" placeholder="ejemplo@gmail.cl">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-sm-6">
+                                                                                <div class="common_input mb-3">
+                                                                                    <label>N° Telefono</label>
+                                                                                    <input id="idTelefonoAdmin" type="text" class="form-control" placeholder="Ej: 941255458">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-sm-6">
+                                                                                <div class="common_input mb-3">
+                                                                                    <label>Direccion</label>
+                                                                                    <input id="idDireccionAdmin" type="text" class="form-control" placeholder="Ingresa tu direccion">
+                                                                                </div>
+                                                                            </div>
+                                                                             <div class="col-sm-6">
+                                                                                <div class="common_input mb-3">
+                                                                                    <label>Region</label>
+                                                                                    <select class="form-select form-control" id="regionId" style="font-size: 17px; font-weight: lighter; height:45px" aria-label="Default select example">
+                                                                                        
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-sm-6">
+                                                                                <div class="common_input mb-3">
+                                                                                    <label>Provincia</label>
+                                                                                    <select class="form-select form-control" disabled id="provinciaId" style="font-size: 17px; font-weight: lighter;height:45px" aria-label="Default select example">
+                                                                                        
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-sm-6">
+                                                                                <div class="common_input mb-3">
+                                                                                    <label>Comuna</label>
+                                                                                    <select class="form-select form-control" disabled id="comunaId" style="font-size: 17px; font-weight: lighter;height:45px" aria-label="Default select example">
+                                                                                        
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div> -->
+                                                                            
+                                                                        </div>                                            
+                                                                        <button onclick="modificarAdmin()" class="btn btnCito userProfile rounded-pill mt-2">Cambiar contraseña</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>                 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2" style="display: none;">
+                    <div class="col">
+                        <div class="white_card card_height_100 mb_30" >
+                            <div class="white_card_header">
+                                <div class="box_header m-0">
+                                    <div class="main-title">
+                                        <h3 class="m-0">Accesos</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white_card_body wrapperBtn">
+                                <button class="btn btnColor rounded-pill mt-2 mr-10" id="btnRegister">Registrar</button>
+                                <button class="btn btnColor rounded-pill mt-2 mr-10" id="btnUnRegister">Salir</button>
+                                <button class="btn btnColor rounded-pill mt-2 mr-10" id="btnCall">Llamar</button>
+                                <button class="btn btnColor rounded-pill mt-2 mr-10" id="btnPlivo">Plivo</button>
+                                <button class="btn btnColor rounded-pill mt-2 mr-10" id="btnLoginPlivo">Login</button>
+                                <button class="btn btnColor rounded-pill mt-2 mr-10" id="btnCallPlivo">Llamar</button>
+                            </div>
+                            <input type="hidden" id="UserId" placeholder="" value="1001" />
+                            <input type="hidden" id="password" placeholder="" value="Social1650way" />
+                            <input type="hidden" id="domain" placeholder="" value="voice1002.citoapp.io" />
+                            <input type="hidden" id="port" placeholder="" value="7443" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="white_card card_height_100 mb_30">
+                            <div class="white_card_header">
+                                <div class="box_header m-0">
+                                    <div class="main-title">
+                                        <h3 class="m-0">Llamadas entrantes</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white_card_body">
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="white_card card_height_100 mb_30">
+                            <div class="white_card_header">
+                                <div class="box_header m-0">
+                                    <div class="main-title">
+                                        <h3 class="m-0">Ultimos movimientos</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white_card_body">
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<!-- ### MODALS   ### -->
+
+<!-- MODAL Calendario -->
+
+<div class="modal fade" id="modalCalendarioAcceso" tabindex="-1" role="dialog" aria-labelledby="modalCalendarioAcceso" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tituloModalCalendarioAcceso"></h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body table-responsive" style="height: 350px; overflow: auto;">
+            <table class="table table-striped" id="tableCalendarioAcceso">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre Invitado</th>
+                        <th scope="col">Apellido Invitado</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Hora Inicio</th>
+                        <th scope="col">Fecha Termino</th>
+                        <th scope="col">Hora Termino</th>      
+                        <th scope="col">Residencia</th>               
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- MODAL Detalle Visita -->
+
+<div class="modal fade" id="modalDetalleVisita" tabindex="-1" role="dialog" aria-labelledby="modalDetalleVisita" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tituloModalDetalleVisita"></h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body table-responsive" style="overflow: auto;">
+            <table class="table" id="tableDetalleVisita">
+                <thead>
+                    <tr>
+                        <th scope="col" style="display: none;">Id</th>
+                        <th scope="col">Rut Visita</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Fecha Nacimiento</th>
+                        <th scope="col">Fecha Llegada</th>
+                        <th scope="col">Hora Llegada</th>
+                        <!-- <th scope="col" style="display: none;">Fecha Salida</th>
+                        <th scope="col" style="display: none;">Hora Salida</th> -->
+                        <th scope="col">Tipo Llegada</th>
+                        <th scope="col">Patente</th>
+                        <th scope="col">Estacionamiento</th>
+                        <th scope="col">Residencia</th>          
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- MODAL AGREGAR Visita -->
+
+    <div class="modal fade" id="modalAgregarVisitas" tabindex="-1" role="dialog" aria-labelledby="modalAgregarVisitasTitulo" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header d-block">
+              <h3 class="modal-title text-center" id="modalAgregarTitulo">Registrar Visita</h3>
+            </div>
+            <div class="modal-body modalVisitaBody">
+                <div class="row">
+                    <div class="col-12 row">
+                        <h3 class="title-modal-window" style="font-size: 22px;" >Datos de visita</h3>
+                        <div class="col-md-6">                            
+                            <h3 class="titulos" id="tituloNombre">Nombre Completo:</h3>
+                            <input id="nombreInputId" class="inputResidentes" type="text" placeholder="Ej: Nombre Apellido" autofocus>
+                        </div>
+                        <div class="col-md-3">                            
+                            <h3 class="titulos" id="tituloNombre">Nacionalidad:</h3>
+                            <input id="nacionalidadId" class="inputResidentes" type="text" maxlength="25">
+                        </div>
+                        <div class="col-3">
+                            <h3 class="titulos" id="tituloResidencia">N° de residencia:</h3>
+                            <select class="form-select form-control registroSelect" id="numeroResidenciaId" aria-label="Default select example">
+                                
+                            </select>
+                        </div>
+                      
+                    </div>
+                    <div class="col-12 row">
+                        <div class="col-md-3 rutSection">
+                            <h3 class="titulos" id="tituloRut">Rut:</h3>
+                            <input id="rutId" class="inputResidentes" type="text" maxlength="12"  placeholder="Ej: 12532241-2" >
+                        </div>
+                        <div class="col-md-2">
+                            <h3 class="titulos" id="tituloSexo">Sexo:</h3>
+                            <!-- <input id="sexoId" class="inputResidentes" type="text" maxlength="15"> -->
+                            <select class="form-select form-control registroSelect" id="sexoId" aria-label="Seleccionar Sexo">
+                                <option value="0" selected>-- Seleccionar --</option>
+                                <option value="1"> Masculino </option>
+                                <option value="2"> Femenino </option>
+                                <option value="3"> No Especifica </option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="ApellidoPaternoAdd titulos" id="tituloNacimiento">Fecha de nacimiento: (opcional)</h3>
+                            <input id="fechaNacimientoId" class="inputResidentes" type="date" >
+                        </div>
+                        <div class="col-md-3" id="checkBoxLlegada">
+                            <h3 class="ApellidoPaternoAdd titulos" id="tituloTipo">Tipo de llegada:</h3>
+                            <div class="form-check form-check-inline" style="font-size: 15px;">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="arriboPeaton" checked>
+                                <label class="form-check-label" for="arriboPeaton">Peatón</label>
+                            </div>
+                            <div class="form-check form-check-inline" style="font-size: 15px;">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="arriboVehiculo">
+                                <label class="form-check-label" for="arriboVehiculo">Vehículo</label>
+                            </div>
+                        </div>          
+                    </div>
+                    <div class="col-12 row">
+                        <div class="col-md-5">
+                            <h3 class="titulos"id="tituloHora">Hora de llegada:</h3>
+                            <input id="horaLlegadaId" class="inputResidentes" disabled type="time">
+                        </div>
+                        <div class="col-md-4 fechaLlegada">
+                            <h3 class="titulos" id="tituloFecha">Fecha de llegada:</h3>
+                            <input id="fechaLlegadaId" class="inputResidentes" type="date" disabled>
+                        </div>
+                        <div class="col-md-2 llegadaOculta">
+                                <h3 class="titulos" id="tituloPatente">Patente:</h3>
+                                <input id="patenteId" class="inputResidentes" type="text" maxlength="10" placeholder="Ej: AABB11">              
+                        </div>
+                        <div class="col-md-2 llegadaOculta">
+                            <h3 class="titulos" id="tituloEstacionamiento">Estacionamiento:</h3>
+                            <select class="form-select form-control registroSelect" id="estacionamientoId" style="font-size: 15px; font-weight: lighter;" aria-label="Default select example">
+                                
+                            </select>
+                        </div>  
+                      
+                    </div>
+                    <div class="col-md-12">
+                        <h3 class="titulos" id="tituloObservaciones">Observaciones:</h3>
+                        <textarea id="observaId" class="inputResidentes observaciones" maxlength="200"> </textarea>
+                    </div>                  
+                  </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" id="btnCancelar" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary" id="btnGuardar">Registrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- MODAL Confirmar Salida -->
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="modalSalida">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h4>¿Registrar salida del visitante?</h4>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" id="btnSalidaSi">Si</button>
+              <button type="button" class="btn btn-danger" id="btnSalidaNo">No</button>
+            </div>
+          </div>
+    </div>
+</div>
+
+
+<!-- footer part -->
+<div class="footer_part">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer_iner text-center">
+                    <p>2023 © CITOApp SPA - ConserjeWeb v2.17</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- main content part end -->
+
+<!-- ### CHAT_MESSAGE_BOX   ### -->
+
+
+<!-- footer  -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!-- bootstarp js -->
+<script src="js/popper.min.js"></script>
+
+<!-- Jquery Rut js -->
+<script src="vendors/jquery-rut/jquery.rut.js"></script>
+<!-- sidebar menu  -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/metisMenu.js"></script>
+<!-- Plivo Sdk -->
+<script src="https://cdn.plivo.com/sdk/browser/v2/plivo.min.js"></script>
+
+<script src="js/sip.min.js"></script>
+<script src="js/ABTOPhoneUA.min.js"></script>
+<script src="vendors/niceselect/js/jquery.nice-select.min.js"></script>
+<script src="vendors/datatable/js/jquery.dataTables.min.js"></script>
+<script src="vendors/datatable/js/dataTables.responsive.min.js"></script>
+<script src="vendors/sweetAlerts/sweetalert2.js"></script>
+<script src="vendors/caleandar-master/js/caleandar.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/config.js"></script>
+<script src="js/index.js"></script>
+<!-- counterup js -->
+<script src="vendors/count_up/jquery.counterup.min.js"></script>
+</body>
+</html>

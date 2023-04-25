@@ -1,0 +1,1004 @@
+{
+    "data": [
+        {
+            "ESPAÑOL": "Afganistán",
+            "ISO3": "AFG"
+        },
+        {
+            "ESPAÑOL": "Albania",
+            "ISO3": "ALB"
+        },
+        {
+            "ESPAÑOL": "Alemana",
+            "ISO3": "DEU"
+        },
+        {
+            "ESPAÑOL": "Algeria",
+            "ISO3": "DZA"
+        },
+        {
+            "ESPAÑOL": "Andorra",
+            "ISO3": "AND"
+        },
+        {
+            "ESPAÑOL": "Angola",
+            "ISO3": "AGO"
+        },
+        {
+            "ESPAÑOL": "Anguila",
+            "ISO3": "AIA"
+        },
+        {
+            "ESPAÑOL": "Antártida",
+            "ISO3": "ATA"
+        },
+        {
+            "ESPAÑOL": "Antigua y Barbuda",
+            "ISO3": "ATG"
+        },
+        {
+            "ESPAÑOL": "Antillas Neerlandesas",
+            "ISO3": "ANT"
+        },
+        {
+            "ESPAÑOL": "Arabia Saudita",
+            "ISO3": "SAU"
+        },
+        {
+            "ESPAÑOL": "Argentina",
+            "ISO3": "ARG"
+        },
+        {
+            "ESPAÑOL": "Armenia",
+            "ISO3": "ARM"
+        },
+        {
+            "ESPAÑOL": "Aruba",
+            "ISO3": "ABW"
+        },
+        {
+            "ESPAÑOL": "Australia",
+            "ISO3": "AUS"
+        },
+        {
+            "ESPAÑOL": "Austria",
+            "ISO3": "AUT"
+        },
+        {
+            "ESPAÑOL": "Azerbayán",
+            "ISO3": "AZE"
+        },
+        {
+            "ESPAÑOL": "Bahamas",
+            "ISO3": "BHS"
+        },
+        {
+            "ESPAÑOL": "Bahrein",
+            "ISO3": "BHR"
+        },
+        {
+            "ESPAÑOL": "Bangladesh",
+            "ISO3": "BGD"
+        },
+        {
+            "ESPAÑOL": "Barbados",
+            "ISO3": "BRB"
+        },
+        {
+            "ESPAÑOL": "Belga",
+            "ISO3": "BEL"
+        },
+        {
+            "ESPAÑOL": "Belice",
+            "ISO3": "BLZ"
+        },
+        {
+            "ESPAÑOL": "Benín",
+            "ISO3": "BEN"
+        },
+        {
+            "ESPAÑOL": "Bhután",
+            "ISO3": "BTN"
+        },
+        {
+            "ESPAÑOL": "Bielorrusia",
+            "ISO3": "BLR"
+        },
+        {
+            "ESPAÑOL": "Birmania",
+            "ISO3": "MMR"
+        },
+        {
+            "ESPAÑOL": "Boliviana",
+            "ISO3": "BOL"
+        },
+        {
+            "ESPAÑOL": "Bosnia y Herzegovina",
+            "ISO3": "BIH"
+        },
+        {
+            "ESPAÑOL": "Botsuana",
+            "ISO3": "BWA"
+        },
+        {
+            "ESPAÑOL": "Brasileña",
+            "ISO3": "BRA"
+        },
+        {
+            "ESPAÑOL": "Brunéi",
+            "ISO3": "BRN"
+        },
+        {
+            "ESPAÑOL": "Bulgaria",
+            "ISO3": "BGR"
+        },
+        {
+            "ESPAÑOL": "Burkina Faso",
+            "ISO3": "BFA"
+        },
+        {
+            "ESPAÑOL": "Burundi",
+            "ISO3": "BDI"
+        },
+        {
+            "ESPAÑOL": "Cabo Verde",
+            "ISO3": "CPV"
+        },
+        {
+            "ESPAÑOL": "Camboya",
+            "ISO3": "KHM"
+        },
+        {
+            "ESPAÑOL": "Camerún",
+            "ISO3": "CMR"
+        },
+        {
+            "ESPAÑOL": "Canadiense",
+            "ISO3": "CAN"
+        },
+        {
+            "ESPAÑOL": "Chad",
+            "ISO3": "TCD"
+        },
+        {
+            "ESPAÑOL": "Chilena",
+            "ISO3": "CHL"
+        },
+        {
+            "ESPAÑOL": "China",
+            "ISO3": "CHN"
+        },
+        {
+            "ESPAÑOL": "Chipre",
+            "ISO3": "CYP"
+        },
+        {
+            "ESPAÑOL": "Ciudad del Vaticano",
+            "ISO3": "VAT"
+        },
+        {
+            "ESPAÑOL": "Colombiana",
+            "ISO3": "COL"
+        },
+        {
+            "ESPAÑOL": "Comoras",
+            "ISO3": "COM"
+        },
+        {
+            "ESPAÑOL": "Congo",
+            "ISO3": "COG"
+        },
+        {
+            "ESPAÑOL": "Congo",
+            "ISO3": "COD"
+        },
+        {
+            "ESPAÑOL": "Corea del Norte",
+            "ISO3": "PRK"
+        },
+        {
+            "ESPAÑOL": "Corea del Sur",
+            "ISO3": "KOR"
+        },
+        {
+            "ESPAÑOL": "Costa de Marfil",
+            "ISO3": "CIV"
+        },
+        {
+            "ESPAÑOL": "Costa Rica",
+            "ISO3": "CRI"
+        },
+        {
+            "ESPAÑOL": "Croacia",
+            "ISO3": "HRV"
+        },
+        {
+            "ESPAÑOL": "Cubana",
+            "ISO3": "CUB"
+        },
+        {
+            "ESPAÑOL": "Dinamarca",
+            "ISO3": "DNK"
+        },
+        {
+            "ESPAÑOL": "Dominica",
+            "ISO3": "DMA"
+        },
+        {
+            "ESPAÑOL": "Ecuatoriana",
+            "ISO3": "ECU"
+        },
+        {
+            "ESPAÑOL": "Egipto",
+            "ISO3": "EGY"
+        },
+        {
+            "ESPAÑOL": "El Salvador",
+            "ISO3": "SLV"
+        },
+        {
+            "ESPAÑOL": "Emiratos Árabes Unidos",
+            "ISO3": "ARE"
+        },
+        {
+            "ESPAÑOL": "Eritrea",
+            "ISO3": "ERI"
+        },
+        {
+            "ESPAÑOL": "Escocia",
+            "ISO3": ""
+        },
+        {
+            "ESPAÑOL": "Eslovaquia",
+            "ISO3": "SVK"
+        },
+        {
+            "ESPAÑOL": "Eslovenia",
+            "ISO3": "SVN"
+        },
+        {
+            "ESPAÑOL": "Española",
+            "ISO3": "ESP"
+        },
+        {
+            "ESPAÑOL": "EstadoUnidense",
+            "ISO3": "USA"
+        },
+        {
+            "ESPAÑOL": "Estonia",
+            "ISO3": "EST"
+        },
+        {
+            "ESPAÑOL": "Etiopía",
+            "ISO3": "ETH"
+        },
+        {
+            "ESPAÑOL": "Filipinas",
+            "ISO3": "PHL"
+        },
+        {
+            "ESPAÑOL": "Finlandia",
+            "ISO3": "FIN"
+        },
+        {
+            "ESPAÑOL": "Fiyi",
+            "ISO3": "FJI"
+        },
+        {
+            "ESPAÑOL": "Francesa",
+            "ISO3": "FRA"
+        },
+        {
+            "ESPAÑOL": "Gabón",
+            "ISO3": "GAB"
+        },
+        {
+            "ESPAÑOL": "Gales",
+            "ISO3": ""
+        },
+        {
+            "ESPAÑOL": "Gambia",
+            "ISO3": "GMB"
+        },
+        {
+            "ESPAÑOL": "Georgia",
+            "ISO3": "GEO"
+        },
+        {
+            "ESPAÑOL": "Ghana",
+            "ISO3": "GHA"
+        },
+        {
+            "ESPAÑOL": "Gibraltar",
+            "ISO3": "GIB"
+        },
+        {
+            "ESPAÑOL": "Granada",
+            "ISO3": "GRD"
+        },
+        {
+            "ESPAÑOL": "Grecia",
+            "ISO3": "GRC"
+        },
+        {
+            "ESPAÑOL": "Groenlandia",
+            "ISO3": "GRL"
+        },
+        {
+            "ESPAÑOL": "Guadalupe",
+            "ISO3": "GLP"
+        },
+        {
+            "ESPAÑOL": "Guam",
+            "ISO3": "GUM"
+        },
+        {
+            "ESPAÑOL": "Guatemala",
+            "ISO3": "GTM"
+        },
+        {
+            "ESPAÑOL": "Guayana Francesa",
+            "ISO3": "GUF"
+        },
+        {
+            "ESPAÑOL": "Guernsey",
+            "ISO3": "GGY"
+        },
+        {
+            "ESPAÑOL": "Guinea",
+            "ISO3": "GIN"
+        },
+        {
+            "ESPAÑOL": "Guinea Ecuatorial",
+            "ISO3": "GNQ"
+        },
+        {
+            "ESPAÑOL": "Guinea-Bissau",
+            "ISO3": "GNB"
+        },
+        {
+            "ESPAÑOL": "Guyana",
+            "ISO3": "GUY"
+        },
+        {
+            "ESPAÑOL": "Haití",
+            "ISO3": "HTI"
+        },
+        {
+            "ESPAÑOL": "Honduras",
+            "ISO3": "HND"
+        },
+        {
+            "ESPAÑOL": "Hong kong",
+            "ISO3": "HKG"
+        },
+        {
+            "ESPAÑOL": "Hungría",
+            "ISO3": "HUN"
+        },
+        {
+            "ESPAÑOL": "India",
+            "ISO3": "IND"
+        },
+        {
+            "ESPAÑOL": "Indonesia",
+            "ISO3": "IDN"
+        },
+        {
+            "ESPAÑOL": "Inglaterra",
+            "ISO3": ""
+        },
+        {
+            "ESPAÑOL": "Irak",
+            "ISO3": "IRQ"
+        },
+        {
+            "ESPAÑOL": "Irán",
+            "ISO3": "IRN"
+        },
+        {
+            "ESPAÑOL": "Irlanda",
+            "ISO3": "IRL"
+        },
+        {
+            "ESPAÑOL": "Irlanda del Norte",
+            "ISO3": ""
+        },
+        {
+            "ESPAÑOL": "Isla Bouvet",
+            "ISO3": "BVT"
+        },
+        {
+            "ESPAÑOL": "Isla de Man",
+            "ISO3": "IMN"
+        },
+        {
+            "ESPAÑOL": "Isla de Navidad",
+            "ISO3": "CXR"
+        },
+        {
+            "ESPAÑOL": "Isla Norfolk",
+            "ISO3": "NFK"
+        },
+        {
+            "ESPAÑOL": "Islandia",
+            "ISO3": "ISL"
+        },
+        {
+            "ESPAÑOL": "Islas Bermudas",
+            "ISO3": "BMU"
+        },
+        {
+            "ESPAÑOL": "Islas Caimán",
+            "ISO3": "CYM"
+        },
+        {
+            "ESPAÑOL": "Islas Cocos (Keeling)",
+            "ISO3": "CCK"
+        },
+        {
+            "ESPAÑOL": "Islas Cook",
+            "ISO3": "COK"
+        },
+        {
+            "ESPAÑOL": "Islas de Åland",
+            "ISO3": "ALA"
+        },
+        {
+            "ESPAÑOL": "Islas Feroe",
+            "ISO3": "FRO"
+        },
+        {
+            "ESPAÑOL": "Islas Georgias del Sur y Sandwich del Sur",
+            "ISO3": "SGS"
+        },
+        {
+            "ESPAÑOL": "Islas Heard y McDonald",
+            "ISO3": "HMD"
+        },
+        {
+            "ESPAÑOL": "Islas Maldivas",
+            "ISO3": "MDV"
+        },
+        {
+            "ESPAÑOL": "Islas Malvinas",
+            "ISO3": "FLK"
+        },
+        {
+            "ESPAÑOL": "Islas Marianas del Norte",
+            "ISO3": "MNP"
+        },
+        {
+            "ESPAÑOL": "Islas Marshall",
+            "ISO3": "MHL"
+        },
+        {
+            "ESPAÑOL": "Islas Pitcairn",
+            "ISO3": "PCN"
+        },
+        {
+            "ESPAÑOL": "Islas Salomón",
+            "ISO3": "SLB"
+        },
+        {
+            "ESPAÑOL": "Islas Turcas y Caicos",
+            "ISO3": "TCA"
+        },
+        {
+            "ESPAÑOL": "Islas Ultramarinas Menores de Estados Unidos",
+            "ISO3": "UMI"
+        },
+        {
+            "ESPAÑOL": "Islas Vírgenes Británicas",
+            "ISO3": "VG"
+        },
+        {
+            "ESPAÑOL": "Islas Vírgenes de los Estados Unidos",
+            "ISO3": "VIR"
+        },
+        {
+            "ESPAÑOL": "Israel",
+            "ISO3": "ISR"
+        },
+        {
+            "ESPAÑOL": "Italiana",
+            "ISO3": "ITA"
+        },
+        {
+            "ESPAÑOL": "Jamaica",
+            "ISO3": "JAM"
+        },
+        {
+            "ESPAÑOL": "Japón",
+            "ISO3": "JPN"
+        },
+        {
+            "ESPAÑOL": "Jersey",
+            "ISO3": "JEY"
+        },
+        {
+            "ESPAÑOL": "Jordania",
+            "ISO3": "JOR"
+        },
+        {
+            "ESPAÑOL": "Kazajistán",
+            "ISO3": "KAZ"
+        },
+        {
+            "ESPAÑOL": "Kenia",
+            "ISO3": "KEN"
+        },
+        {
+            "ESPAÑOL": "Kirgizstán",
+            "ISO3": "KGZ"
+        },
+        {
+            "ESPAÑOL": "Kiribati",
+            "ISO3": "KIR"
+        },
+        {
+            "ESPAÑOL": "Kuwait",
+            "ISO3": "KWT"
+        },
+        {
+            "ESPAÑOL": "Laos",
+            "ISO3": "LAO"
+        },
+        {
+            "ESPAÑOL": "Lesoto",
+            "ISO3": "LSO"
+        },
+        {
+            "ESPAÑOL": "Letonia",
+            "ISO3": "LVA"
+        },
+        {
+            "ESPAÑOL": "Líbano",
+            "ISO3": "LBN"
+        },
+        {
+            "ESPAÑOL": "Liberia",
+            "ISO3": "LBR"
+        },
+        {
+            "ESPAÑOL": "Libia",
+            "ISO3": "LBY"
+        },
+        {
+            "ESPAÑOL": "Liechtenstein",
+            "ISO3": "LIE"
+        },
+        {
+            "ESPAÑOL": "Lituania",
+            "ISO3": "LTU"
+        },
+        {
+            "ESPAÑOL": "Luxemburgo",
+            "ISO3": "LUX"
+        },
+        {
+            "ESPAÑOL": "Macao",
+            "ISO3": "MAC"
+        },
+        {
+            "ESPAÑOL": "Macedônia",
+            "ISO3": "MKD"
+        },
+        {
+            "ESPAÑOL": "Madagascar",
+            "ISO3": "MDG"
+        },
+        {
+            "ESPAÑOL": "Malasia",
+            "ISO3": "MYS"
+        },
+        {
+            "ESPAÑOL": "Malawi",
+            "ISO3": "MWI"
+        },
+        {
+            "ESPAÑOL": "Mali",
+            "ISO3": "MLI"
+        },
+        {
+            "ESPAÑOL": "Malta",
+            "ISO3": "MLT"
+        },
+        {
+            "ESPAÑOL": "Marruecos",
+            "ISO3": "MAR"
+        },
+        {
+            "ESPAÑOL": "Martinica",
+            "ISO3": "MTQ"
+        },
+        {
+            "ESPAÑOL": "Mauricio",
+            "ISO3": "MUS"
+        },
+        {
+            "ESPAÑOL": "Mauritania",
+            "ISO3": "MRT"
+        },
+        {
+            "ESPAÑOL": "Mayotte",
+            "ISO3": "MYT"
+        },
+        {
+            "ESPAÑOL": "Mexicana",
+            "ISO3": "MEX"
+        },
+        {
+            "ESPAÑOL": "Micronesia",
+            "ISO3": "FSM"
+        },
+        {
+            "ESPAÑOL": "Moldavia",
+            "ISO3": "MDA"
+        },
+        {
+            "ESPAÑOL": "Mónaco",
+            "ISO3": "MCO"
+        },
+        {
+            "ESPAÑOL": "Mongolia",
+            "ISO3": "MNG"
+        },
+        {
+            "ESPAÑOL": "Montenegro",
+            "ISO3": "MNE"
+        },
+        {
+            "ESPAÑOL": "Montserrat",
+            "ISO3": "MSR"
+        },
+        {
+            "ESPAÑOL": "Mozambique",
+            "ISO3": "MOZ"
+        },
+        {
+            "ESPAÑOL": "Namibia",
+            "ISO3": "NAM"
+        },
+        {
+            "ESPAÑOL": "Nauru",
+            "ISO3": "NRU"
+        },
+        {
+            "ESPAÑOL": "Nepal",
+            "ISO3": "NPL"
+        },
+        {
+            "ESPAÑOL": "Nicaragua",
+            "ISO3": "NIC"
+        },
+        {
+            "ESPAÑOL": "Niger",
+            "ISO3": "NER"
+        },
+        {
+            "ESPAÑOL": "Nigeria",
+            "ISO3": "NGA"
+        },
+        {
+            "ESPAÑOL": "Niue",
+            "ISO3": "NIU"
+        },
+        {
+            "ESPAÑOL": "Noruega",
+            "ISO3": "NOR"
+        },
+        {
+            "ESPAÑOL": "Nueva Caledonia",
+            "ISO3": "NCL"
+        },
+        {
+            "ESPAÑOL": "Nueva Zelanda",
+            "ISO3": "NZL"
+        },
+        {
+            "ESPAÑOL": "Omán",
+            "ISO3": "OMN"
+        },
+        {
+            "ESPAÑOL": "Países Bajos",
+            "ISO3": "NLD"
+        },
+        {
+            "ESPAÑOL": "Pakistán",
+            "ISO3": "PAK"
+        },
+        {
+            "ESPAÑOL": "Palau",
+            "ISO3": "PLW"
+        },
+        {
+            "ESPAÑOL": "Palestina",
+            "ISO3": "PSE"
+        },
+        {
+            "ESPAÑOL": "Panamá",
+            "ISO3": "PAN"
+        },
+        {
+            "ESPAÑOL": "Papúa Nueva Guinea",
+            "ISO3": "PNG"
+        },
+        {
+            "ESPAÑOL": "Paraguaya",
+            "ISO3": "PRY"
+        },
+        {
+            "ESPAÑOL": "Peruana",
+            "ISO3": "PER"
+        },
+        {
+            "ESPAÑOL": "Polinesia Francesa",
+            "ISO3": "PYF"
+        },
+        {
+            "ESPAÑOL": "Polonia",
+            "ISO3": "POL"
+        },
+        {
+            "ESPAÑOL": "Portugal",
+            "ISO3": "PRT"
+        },
+        {
+            "ESPAÑOL": "Puerto Rico",
+            "ISO3": "PRI"
+        },
+        {
+            "ESPAÑOL": "Qatar",
+            "ISO3": "QAT"
+        },
+        {
+            "ESPAÑOL": "Reino Unido",
+            "ISO3": "GBR"
+        },
+        {
+            "ESPAÑOL": "República Centroafricana",
+            "ISO3": "CAF"
+        },
+        {
+            "ESPAÑOL": "República Checa",
+            "ISO3": "CZE"
+        },
+        {
+            "ESPAÑOL": "República Dominicana",
+            "ISO3": "DOM"
+        },
+        {
+            "ESPAÑOL": "Reunión",
+            "ISO3": "REU"
+        },
+        {
+            "ESPAÑOL": "Ruanda",
+            "ISO3": "RWA"
+        },
+        {
+            "ESPAÑOL": "Rumanía",
+            "ISO3": "ROU"
+        },
+        {
+            "ESPAÑOL": "Rusia",
+            "ISO3": "RUS"
+        },
+        {
+            "ESPAÑOL": "Sahara Occidental",
+            "ISO3": "ESH"
+        },
+        {
+            "ESPAÑOL": "Samoa",
+            "ISO3": "WSM"
+        },
+        {
+            "ESPAÑOL": "Samoa Americana",
+            "ISO3": "ASM"
+        },
+        {
+            "ESPAÑOL": "San Bartolomé",
+            "ISO3": "BLM"
+        },
+        {
+            "ESPAÑOL": "San Cristóbal y Nieves",
+            "ISO3": "KNA"
+        },
+        {
+            "ESPAÑOL": "San Marino",
+            "ISO3": "SMR"
+        },
+        {
+            "ESPAÑOL": "San Martín (Francia)",
+            "ISO3": "MAF"
+        },
+        {
+            "ESPAÑOL": "San Pedro y Miquelón",
+            "ISO3": "SPM"
+        },
+        {
+            "ESPAÑOL": "San Vicente y las Granadinas",
+            "ISO3": "VCT"
+        },
+        {
+            "ESPAÑOL": "Santa Elena",
+            "ISO3": "SHN"
+        },
+        {
+            "ESPAÑOL": "Santa Lucía",
+            "ISO3": "LCA"
+        },
+        {
+            "ESPAÑOL": "Santo Tomé y Príncipe",
+            "ISO3": "STP"
+        },
+        {
+            "ESPAÑOL": "Senegal",
+            "ISO3": "SEN"
+        },
+        {
+            "ESPAÑOL": "Serbia",
+            "ISO3": "SRB"
+        },
+        {
+            "ESPAÑOL": "Seychelles",
+            "ISO3": "SYC"
+        },
+        {
+            "ESPAÑOL": "Sierra Leona",
+            "ISO3": "SLE"
+        },
+        {
+            "ESPAÑOL": "Singapur",
+            "ISO3": "SGP"
+        },
+        {
+            "ESPAÑOL": "Siria",
+            "ISO3": "SYR"
+        },
+        {
+            "ESPAÑOL": "Somalia",
+            "ISO3": "SOM"
+        },
+        {
+            "ESPAÑOL": "Sri lanka",
+            "ISO3": "LKA"
+        },
+        {
+            "ESPAÑOL": "Sudáfrica",
+            "ISO3": "ZAF"
+        },
+        {
+            "ESPAÑOL": "Sudán",
+            "ISO3": "SDN"
+        },
+        {
+            "ESPAÑOL": "Suecia",
+            "ISO3": "SWE"
+        },
+        {
+            "ESPAÑOL": "Suiza",
+            "ISO3": "CHE"
+        },
+        {
+            "ESPAÑOL": "Surinám",
+            "ISO3": "SUR"
+        },
+        {
+            "ESPAÑOL": "Svalbard y Jan Mayen",
+            "ISO3": "SJM"
+        },
+        {
+            "ESPAÑOL": "Swazilandia",
+            "ISO3": "SWZ"
+        },
+        {
+            "ESPAÑOL": "Tadjikistán",
+            "ISO3": "TJK"
+        },
+        {
+            "ESPAÑOL": "Tailandia",
+            "ISO3": "THA"
+        },
+        {
+            "ESPAÑOL": "Taiwán",
+            "ISO3": "TWN"
+        },
+        {
+            "ESPAÑOL": "Tanzania",
+            "ISO3": "TZA"
+        },
+        {
+            "ESPAÑOL": "Territorio Británico del Océano Índico",
+            "ISO3": "IOT"
+        },
+        {
+            "ESPAÑOL": "Territorios Australes y Antárticas Franceses",
+            "ISO3": "ATF"
+        },
+        {
+            "ESPAÑOL": "Timor Oriental",
+            "ISO3": "TLS"
+        },
+        {
+            "ESPAÑOL": "Togo",
+            "ISO3": "TGO"
+        },
+        {
+            "ESPAÑOL": "Tokelau",
+            "ISO3": "TKL"
+        },
+        {
+            "ESPAÑOL": "Tonga",
+            "ISO3": "TON"
+        },
+        {
+            "ESPAÑOL": "Trinidad y Tobago",
+            "ISO3": "TTO"
+        },
+        {
+            "ESPAÑOL": "Tunez",
+            "ISO3": "TUN"
+        },
+        {
+            "ESPAÑOL": "Turkmenistán",
+            "ISO3": "TKM"
+        },
+        {
+            "ESPAÑOL": "Turquía",
+            "ISO3": "TUR"
+        },
+        {
+            "ESPAÑOL": "Tuvalu",
+            "ISO3": "TUV"
+        },
+        {
+            "ESPAÑOL": "Ucrania",
+            "ISO3": "UKR"
+        },
+        {
+            "ESPAÑOL": "Uganda",
+            "ISO3": "UGA"
+        },
+        {
+            "ESPAÑOL": "Uruguaya",
+            "ISO3": "URY"
+        },
+        {
+            "ESPAÑOL": "Uzbekistán",
+            "ISO3": "UZB"
+        },
+        {
+            "ESPAÑOL": "Vanuatu",
+            "ISO3": "VUT"
+        },
+        {
+            "ESPAÑOL": "Venezolana",
+            "ISO3": "VEN"
+        },
+        {
+            "ESPAÑOL": "Vietnam",
+            "ISO3": "VNM"
+        },
+        {
+            "ESPAÑOL": "Wallis y Futuna",
+            "ISO3": "WLF"
+        },
+        {
+            "ESPAÑOL": "Yemen",
+            "ISO3": "YEM"
+        },
+        {
+            "ESPAÑOL": "Yibuti",
+            "ISO3": "DJI"
+        },
+        {
+            "ESPAÑOL": "Zambia",
+            "ISO3": "ZMB"
+        },
+        {
+            "ESPAÑOL": "Zimbabue",
+            "ISO3": "ZWE"
+        }
+    ]
+}

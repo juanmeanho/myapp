@@ -1,0 +1,850 @@
+
+.titlebar {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+
+.titlebar-button {
+  -webkit-app-region: no-drag;
+}
+
+#main, button, #login .form, #menu > ul, #quick-controls {
+  -webkit-app-region: no-drag;
+}
+
+html{
+  height: 100%;
+  font-size: 15px;
+}
+
+body{
+  background-color: var(--main-bg-color);
+  height: calc(100% - 16px);
+  min-width: 1100px;
+}
+
+/*Colors*/
+.white-bkg{
+  background-color: var(--white);
+}
+
+.yellow-bkg{
+  background-color: var(--yellow);
+}
+
+.red-bkg{
+  background-color: var(--red);
+}
+
+.blue-bkg{
+  background-color: var(--blue);
+}
+
+.blue-grey-bkg{
+  background-color: var(--blue-grey);
+}
+
+.green-bkg{
+  background-color: var(--green);
+}
+
+.grey-bkg{
+  background-color: var(--grey);
+}
+
+.accent-grey-bkg{
+  background-color: var(--accent-grey);
+}
+
+.hover-grey-bkg{
+  background-color: var(--hover-grey);  
+}
+
+.yellow-bkg i, .red-bkg i, .blue-bkg i, .blue-grey-bkg i, .green-bkg i, .grey-bkg i, .accent-grey-bkg i{
+  color: #fffffff2;
+}
+
+.white{
+  color: var(--white);
+}
+
+.yellow{
+  color: var(--yellow);
+}
+
+.red{
+  color: var(--red);
+}
+
+.blue{
+  color: var(--blue);
+}
+
+.blue-grey{
+  color: var(--blue-grey) !important;
+}
+
+.green{
+  color: var(--green);
+}
+
+.grey{
+  color: var(--grey);
+}
+
+.accent-grey{
+  color: var(--accent-grey);
+}
+
+.hover-grey{
+  color: var(--hover-grey); 
+}
+
+.cyan{
+  color: var(--cyan);
+}
+
+.material-icons-new {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon-white {
+    webkit-filter: contrast(4) invert(1);
+    -moz-filter: contrast(4) invert(1);
+    -o-filter: contrast(4) invert(1);
+    -ms-filter: contrast(4) invert(1);
+    filter: contrast(4) invert(1);
+}
+
+.col, .column, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  position: relative;
+    float: left;
+   /* padding: 10px;*/
+    height: 100%; /* Should be removed. Only for demonstration */
+}
+
+.col-1{
+  width: 8.33333333%;
+}
+
+.col-2{
+  width: 16.66666667%;
+}
+
+.col-3{
+  width: 25%;
+}
+
+.col-4{
+  width: 33.33333333%;
+}
+
+.col-5{
+  width: 41.66666667%;
+}
+
+.col-6{
+  width: 50%;
+}
+
+.col-7{
+  width: 58.33333333%;
+}
+
+.col-8{
+  width: 66.66666667%;
+}
+
+.col-9{
+  width: 75%;
+}
+
+.col-10{
+  width: 83.33333333%;
+}
+
+.col-11{
+  width: 91.66666667%;
+}
+
+.col-12{
+  width: 100%; 
+}
+
+
+.column-30{
+  width: 30px;
+}
+
+.column-40{
+  width: 40px;
+}
+
+.column-60{
+  width: 60px;
+}
+
+.column-80{
+  width: 80px;
+}
+
+.column-100{
+  width: 100px;
+}
+
+.column-120{
+  width: 120px;
+}
+
+.column-140{
+  width: 140px;
+}
+
+.column-150{
+  width: 150px;
+}
+
+.column-160{
+  width: 160px;
+}
+
+.column-100-100{
+  width: calc(100% - 100px);
+}
+
+.column-100-40{
+  width: calc(100% - 40px);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Grid styles for listing entries*/
+
+.pbx-list-row{
+  height: 55px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all .4s;
+  cursor: default;
+
+}
+
+.pbx-list-row:hover{
+  border: 1px solid var(--grey);
+}
+
+.pbx-list-row .row{
+  height: 100%;
+}
+
+.pbx-list-row i{
+  cursor: pointer;
+}
+
+.pbx-list-row .pbx-col-1{
+  width: 50px;
+  margin-top: 7px
+}
+
+.pbx-list-row .pbx-col-2{
+  width: 30%;
+margin-top: 8px;
+}
+
+.pbx-list-row .pbx-col-3{
+  width: calc(70% - 80px);
+}
+
+.pbx-list-row .pbx-col-3-1{
+  width: inherit;
+  margin-right: 10px;
+  width: calc(50% - 5px);
+}
+
+.pbx-list-row .pbx-col-3-2{
+  width: calc(50% - 5px);
+}
+
+
+@media (max-width: 1280px){
+  .pbx-col-3-1, .pbx-col-3-2{ 
+    height: 18px;
+    padding: 1px;
+    width: 80% !important;
+    max-width: inherit;
+  }
+
+  .pbx-col-3-1 i, .pbx-col-3-2 i{
+    padding: 0px 10px 0px 10px;
+    font-size: 18px !important;
+  }
+}
+
+.pbx-list-row .pbx-col-4{
+  width: 30px;
+}
+
+.pbx-col-avatar{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--grey);
+}
+
+.pbx-initials{
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: .85;
+  color: white;
+}
+
+.pbx-col-tags{
+
+}
+
+.pbx-col-tags .tag-1{
+  height: fit-content;
+    width: fit-content;
+    border-radius: 6px;
+    background-color: var(--blue);
+    color: #fff;
+    padding: 1px 6px 1px 6px;
+    font-size: 10px;
+}
+
+/*------------------------------*/
+
+.card-1 {
+  box-shadow: 0 2px 6px 0 rgba(175,170,170,0.50);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+/*Buttons*/
+
+button:hover{
+  cursor: pointer;
+}
+
+button > * {
+  pointer-events: none;
+}
+
+button * {pointer-events: none;}
+
+button > img{
+  max-width: -webkit-fill-available;
+  height: auto;
+}
+
+[class^="circle-36"]{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: relative;
+  border: transparent;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.circle-36-default{
+  background-color: transparent;
+}
+
+.circle-36-default:hover{
+  /*background-color: #ffffff75;*/
+}
+
+.circle-36-white{
+  background: #FFFFFF;
+}
+
+.circle-36-white:hover{
+  outline: none;
+  /*background-color: #DCE7EA;*/
+}
+
+.circle-28{
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: relative;
+  border: transparent;
+  transition: all .2s;
+}
+
+.circle-20-white{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  position: relative;
+  border: transparent;
+  transition: all .2s;
+}
+
+[class^="circle-"] i{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*ul inline*/
+ul.inline-list{
+  list-style: none;
+}
+
+ul.inline-list li{
+  position: relative;
+  display: inline-block
+}
+
+ul.inline-list li ul li{
+  display: block;
+  /*icon list*/
+}
+ul.icon-list{
+  padding-left: 10px;
+}
+
+ul.icon-list li{
+  padding-right: 20px;
+}
+
+ul.icon-list li:last-child{
+  padding: 0px;
+}
+
+  /*clean list*/
+ul.clean-list{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/*Centering*/
+.x-center{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.y-center{
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.x-y-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button:focus {outline:0;}
+
+.show{
+  display: block !important;
+}
+
+.hide{
+  display: none !important;
+}
+
+.pbx-page-selected {
+    font-weight: bold;
+}
+
+.pbx-page-limit{
+  pointer-events: none;
+}
+
+.pbx-menu-selected {
+    font-weight: bold;
+    color: var(--menu-color-active) !important;
+}
+
+/*Form*/
+form{
+  width: 80%;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+form div{
+  display: table;
+  width: 100%;
+}
+
+form label { 
+  display: table-header-group;
+  text-align: left;
+  font-size: 12px;
+  /*text-transform: uppercase;*/
+  color: #828282;
+  margin-bottom: 2px;
+}
+
+form input[type="text"], form input[type="password"]{
+  display: table-row-group; 
+  width: calc(100% - 5px);
+  border-radius: 0px;
+  border: none;
+  border: 1px solid #c3c3c3;;
+  height: 28px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+form select{
+  display: table-row-group;
+  /*width: calc(100% - 5px);*/
+  width: 100%;
+  border-radius: 0px;
+  border: none;
+  border: 1px solid #c3c3c3;
+  height: 34px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-top: 5px;
+  background-color: #fff;
+}
+
+form input[type="text"], form input[type="password"]{
+  text-indent: 8px;
+}
+
+form input[type="text"]:placeholder-shown, form select:placeholder-shown{
+  background-color: #fff;
+}
+
+form input[type="text"]:focus{
+  /*background-color: red !important;*/
+  border: 2px solid var(--blue);
+  outline: none;
+  margin-bottom: 19px;
+  margin-top: 4px;
+}
+
+form select:focus{
+  /*background-color: red !important;*/
+  border: 2px solid var(--blue);
+  outline: none;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+form input[type="text"]:focus + label, form select:focus + label{
+  color: var(--blue) !important;
+}
+
+/*Buttons*/
+button{
+  transition: all .4s;
+}
+
+button:hover{
+  box-shadow: 0 2px 6px 0 rgba(175,170,170,0.50);
+}
+
+button.button{
+  height: 32px;
+    border-radius: 5px;
+    padding: 2px;
+    padding: 2px 20px 2px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 15px;
+    
+}
+
+button.button.submit{
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: white;
+}
+
+button.button.submit:hover{
+  background-color: var(--blue-hover);
+    border-color: var(--blue-hover);;
+    color: white;
+}
+
+button.button.submit:active{
+  background-color: var(--blue-active);;
+    border-color: var(--blue-active);
+    color: white;
+}
+
+button.button.cancel{
+  background-color: transparent;
+    border-color: var(--red);
+    color: var(--red);
+}
+
+button.button.cancel:hover{
+  background-color: ;
+    border-color: var(--red-hover);
+    color: var(--red-hover);
+}
+
+button.button.cancel:active{
+  background-color: ;
+    border-color: var(--red-active);
+    color: var(--red-active);
+}
+
+/*Tooltip*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /*border-bottom: 1px dotted black;*/
+  font-size: 11px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #353535d1;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltip-top::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #353535d1 transparent transparent transparent;
+}
+
+.tooltip .tooltip-bottom::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #353535d1 transparent;
+}
+
+.tooltip .tooltip-right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-bottom{
+  top: 120%;
+}
+
+.tooltip-top{
+  bottom: 120%;
+}
+
+.tooltip-right{
+  top: 0px !important;
+  left: calc(100% + 5px) !important; 
+  margin-left: 0px !important; 
+}
+
+/*Font*/
+.font-800{
+  font-weight: 800;
+}
+
+/*Tooltip fix for the right side*/
+#my-calls-controls .tooltip-bottom{
+  left: unset !important;
+  top: unset !important;
+  position: fixed;
+  margin-top: 25px;
+}
+
+#my-calls-controls .tooltip .tooltip-bottom::after{
+  position: absolute;
+  margin-top: -15px;
+
+  bottom: unset !important;
+
+
+}
+
+/*Scroll bar thingy*/
+.scrollbar{
+  cursor: pointer;
+}
+
+.scrollbar::-webkit-scrollbar, #dialog-window-container::-webkit-scrollbar { 
+  /* This is the magic bit */
+  width: 5px;
+  height: 5px;
+}
+
+/*scrollbar handle*/
+.scrollbar::-webkit-scrollbar-thumb, #dialog-window-container::-webkit-scrollbar-thumb  {
+    background: var(--menu-color);  
+    border-radius: 40px;
+}
+
+/*scrollbar handle on hover*/
+.scrollbar::-webkit-scrollbar-thumb:hover, #dialog-window-container::-webkit-scrollbar-thumb:hover  {
+    background: var(--menu-color-hover); 
+}
+
+.scrollbar::-webkit-scrollbar-thumb:horizontal{
+  background: var(--menu-color); 
+  height: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:horizontal:hover{
+  background: var(--menu-color); 
+}
+
+/*Global styles for page containers*/
+
+#adrbook-window, #history-window, #voicemail-window, #recordings-window{
+  overflow: unset !important;
+}
+
+#voicemail-window audio, #recordings-window audio{
+  width: calc(100%);
+}
+
+#home-content, #adrbook-content, #history-content, #settings-content, #messages-content{
+  overflow: auto;
+  height: calc(100% - 50px);
+}
+
+#voicemail-content, #recordings-content{
+  overflow: auto;
+  height: calc(100% - 100px);
+}
+
+#adrbook-content, #history-content{
+  
+}
+
+#home-controls, #adrbook-controls, #history-controls, #voicemail-controls, #recordings-controls, #acd-agent-controls, #acd-controls, #settings-contols, #conf-controls, #messages-controls{
+  height: 40px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--grey);
+}
+
+#history-content > div:first-child{
+  padding-top: 20px;
+}
+
+input:focus{
+    outline: none;
+}
+
+/* Accordion */
+.accordion-toggle {
+  display: block;
+}
+
+.accordion-content {
+  display: none;
+}
+
+.accordion-content.active {
+  display: block;
+}
+
+.disabled{
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.button-left{
+  /*border-top-left-radius: var(--box-border-radius);*/
+  border-bottom-left-radius: var(--box-border-radius);
+}
+
+.button-3-left, .button-3-middle, .button-3-right{
+  width: 100%;
+  border: 1px solid var(--grey);
+}
+
+.button-right{
+  /*border-top-right-radius: var(--box-border-radius);*/
+  border-bottom-right-radius: var(--box-border-radius);
+}
+
+.icon-8{
+  font-size: 8px;
+}
+
+.icon-12{
+  font-size: 12px;
+}
+
+.wrap{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.flip{
+  transform: rotate(180deg);
+}
+

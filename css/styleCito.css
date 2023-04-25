@@ -1,0 +1,631 @@
+:root{
+  --buscadorE: #F6F7FB;
+  --box-Border: 8px;
+  --red: #F76255;
+  --white: #ffffff;
+  --greenL: #27C676;
+  --yellow: #F8B559;
+}
+
+.green-bkg{
+  background-color: var(--greenL);
+}
+
+
+
+
+/**************** PRE LOADER ****************/
+
+#contenedor_carga{
+  background-color: rgba(250, 240, 245, 0.9);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 10000;
+}
+
+#carga{
+  background:transparent url(../img/svgs/logo.gif) center no-repeat;
+ 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+/*   -webkit-animation: girar 1.5s linear infinite;
+  -o-animation: girar 1.5s linear infinite;
+  animation: girar 1.5s linear infinite; */
+}
+
+@keyframes girar {
+
+  from { transform: rotate(0deg);}
+  to { transform: rotate(20deg);}
+}
+
+
+
+#tableCalendario_info{
+    display: none;
+}
+#tableCalendario_paginate{
+    display: none;
+}
+
+/**************** GENERAL ****************/
+
+.status_false {
+    display: inline-block;
+    padding: 2px 15px;
+    font-size: 11px;
+    font-weight: 300;
+    color: #fff!important;
+    background: #c82333;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    min-width: 70px;
+    text-align: center
+}
+
+.cursorCito{
+    cursor: pointer;
+}
+
+.btnCito{
+  color: #fff;
+  background-color: #884FFB;
+  border-color: #884FFB;
+}
+.btnCito:hover{
+  color: #fff;
+  background-color: #884FFBe6;
+  border-color: #884FFBe6;
+}
+
+
+#search-bar {
+  margin-left: 15px;
+}
+
+#search-bar span {
+  position: absolute;
+  padding-top: 6px;
+  left: 25px;
+}
+
+
+#search-bar input {
+  width: 90%;
+  height: 35px;
+  background: var(--buscadorE);
+  border: none;
+  border-radius: 5px;
+  text-indent: 40px;
+  font-size: 13px;
+  transition: all .5s;
+}
+
+
+.sidebar #sidebar_menu li a img {
+  width: 35px;
+  height: auto;
+}
+
+.ext-online {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: -3px;
+  bottom: 0px;
+  background-color: var(--green);
+  border-radius: 50%;
+  border: 2px solid var(--main-bg-color);
+  border: 1px solid transparent;
+}
+
+.wrapperBtn{
+  display: grid;
+}
+@media (min-width: 1450px) {
+  .wrapperBtn{
+    grid-template-columns: 100px 100px ;
+  }
+}
+
+.citoApp{
+  display: inline-block;
+}
+#sidebar_menu{
+  overflow: visible !important;
+}
+/* #sidebar_menu ul li {
+  position:absolute;
+  z-index: 1100;
+  right:0px;
+  top:25px;
+} */
+/* .mm-collapse li{
+  width: 100%;
+  height: 200px;
+  background-color: grey;
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+z-index: 99999;
+} */
+.sidebarCito{
+  overflow: visible !important;
+}
+/* .sidebar.sidebarCito #sidebar_menu > li {
+  position: relative;
+  width: 136px;
+  text-align: center;
+} */
+/* .sidebar.sidebarCito #sidebar_menu > li.mm-active ul {
+  left: 100%;
+  left: 136px;
+  position: absolute;
+  top: 100%;
+  margin-bottom: 50%;
+  width: 194px;
+  z-index: 1000;
+  margin-left: 50%;
+  padding-left: 0;
+} */
+
+
+/**************************************** General ****************************************/
+.btnColor{
+  background: linear-gradient(90deg, #8224e3 0%, #40eaf8 100%);
+  border: 0;
+  border-radius: 10px !important;
+  color: #fff;
+}
+
+.dashboard-status {
+  height: 80px;
+  width: calc(100% - 2px);
+  background: linear-gradient(90deg, #8224e3 0%, #40eaf8 100%);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+  background-size: cover;
+  background-position: 0px 0px;
+}
+.dashboard-status .row {
+  height: 100%;
+}
+.stat {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+}
+.stat-value {
+  font-size: 32px;
+  color: #fff;
+  opacity: .92;
+}
+.stat-value, .stat-name {
+  width: max-content;
+}
+.stat-name {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.box {
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+}
+
+.visitasActuales{
+  padding: 5px 15px 25px 13px;
+}
+
+.paddingCard{
+  padding: 5px 30px 25px 30px;
+}
+
+@media only screen and (min-width: 780px) and (max-width: 1450px) {
+  .vActuales{
+    width: 50%;
+  }
+  .iActuales{
+    width: 50%;
+  }
+  .eActuales{
+    width: 50%;
+  }
+  #tablaVisitas_filter {
+    margin-right: 3% !important;
+  }
+}
+
+
+/* VISTAS */
+
+.llamadasVista{display: none;}
+.mensajesVista{display: none;}
+.buzonVista{display: none;}
+.visitasVista{display: none;}
+.invitadosVista{display: none;}
+.perfilVista{display: none;}
+
+.white_card_Visitas {
+  background-color: transparent;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+
+/* line 45, G:/admin_project/8 admin/management_html/scss/_dashboard_part.scss */
+.white_card_Visitas .white_card_header {
+  padding: 22px 30px;
+}
+.white_card_Visitas .white_card_Llamada {
+  padding: 22px 0px;
+}
+
+/* line 53, G:/admin_project/8 admin/management_html/scss/_dashboard_part.scss */
+.white_card_Visitas .white_card_body {
+  padding: 5px 30px 25px 30px;
+}
+
+.white_card_Visitas .white_card_Tablas{
+  padding: 5px 30px 0px 30px;
+}
+/* .contenedor{
+  
+} */
+.caja1{
+  border: 1px solid #8520e8;
+  border-radius: var(--box-Border);
+  
+}
+.caja2{
+  border: 1px solid #8520e8;
+  border-radius: var(--box-Border);
+  
+}
+.caja3{
+  border: 1px solid #8520e8;
+  border-radius: var(--box-Border);
+  width: 24%;
+}
+
+/**************************************** VISITAS ****************************************/
+#tablaVisitas td:nth-child(1) {
+  display: none;
+}
+.QA_section .tablaVisitas .table thead th:nth-child(2) {
+  border-radius: 5px 0px 0px 5px;
+  border-left: 1px solid #E5ECFF !important;
+}
+
+#tablaVisitas_next{
+  display: none;
+}
+#tablaVisitas_previous{
+  display: none;
+}
+
+#tablaVisitas_length{
+  float: right;
+  padding-top: 8px;
+}
+#tablaVisitas_filter{
+  margin-right: 19%;
+}
+
+#tablaLlamadas_length {
+  float: right;
+  padding-top: 8px;
+}
+#tablaLlamadas_filter {
+  margin-right: 19%;
+}
+
+
+.dataTables_filter input{
+  width: 450px;
+  color: #000;
+  font-size: 13px;
+  height: 35px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 1px solid #2D1967;
+  padding-right: 15px;
+  text-transform: capitalize;
+}
+
+.titulos {
+  font-size: 15px;
+  font-weight: lighter;
+  margin-top: 17px;
+}
+
+.titulosVacio {
+  color: red;
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.inputResidentes {
+  color: black;
+  padding-left: 5px;
+  font-size: 15px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
+}
+
+.registroSelect{
+  font-size: 15px; 
+  font-weight: lighter;
+  height: 30px;
+  padding: 0px;
+  padding-left: 3px;
+}
+
+.llegadaOculta{
+  display: none;
+}
+
+.btnVisita{
+  margin-bottom: -49px;
+}
+
+.btnLlamadas{
+  margin-bottom: -49px;
+}
+
+.z-indexVisita{
+  z-index: 1;
+  position: relative;
+}
+
+.z-indexLlamada{
+  position: relative;
+  width: 50px;
+  z-index: 99;
+}
+
+#tituloModalDetalleVisita{
+  font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #474D58;
+}
+
+
+/**************************************** Invitados ****************************************/
+.tablaIndividual{
+  width: 30%;
+}
+.tablaGrupal{
+  width: 36%;
+}
+
+.table-sm td, .table-sm th {
+  padding: 0.3rem;
+}
+
+.btnBuscarAcceso{
+  align-items: center; 
+  justify-content: flex-end; 
+  margin-left: 5px; 
+  font-weight: lighter; 
+  color: #f4f6f9; 
+  font-size: 17px; 
+  text-align: center; 
+  border: none; 
+  background-color: #884ffb;
+  border-color: #884ffb;
+}
+.btnBuscarAcceso:hover {
+  color:#fff;
+}
+.inputBuscadorAcceso{
+  border: 1px solid rgba(0, 0, 0, 0.548);
+  padding:5px 0px 3px 10px;
+  width: 110%; 
+  border-radius: 5px;
+}
+
+
+/**************************************** Vista Llamada ****************************************/
+
+
+
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  -webkit-appearance: none;
+}
+.close {
+  float: right;
+  font-size: 21px;
+  line-height: 1;
+  color: #000;
+  opacity: .2;
+}
+
+#vistaLlamada{
+  display: none;
+}
+
+#llamadaCurso{
+  display: none;
+}
+
+.yellow-bkg{
+  background-color: var(--yellow);
+}
+
+/* .button-on i {
+  color: blue !important;
+  font-weight: bold;
+} */
+.button-off i {
+  color: blue !important;
+  font-weight: bold;
+}
+
+
+/**************************************** Vista Menu izquierda ****************************************/
+
+
+.nombreD{
+  text-align: center; 
+  float: left; 
+  width: 33%;
+}
+
+.numeroD{
+  text-decoration: underline;
+}
+
+/* #contenedor { max-width: 80%; margin: 2em auto; } */
+/* #contenedor .palabra { text-align: center; float: left; width: 80%; } */
+/* #contenedor .palabra > span { text-decoration: underline; } */
+#contenedor .pull-left{
+  float: left;
+}
+.iconD{
+  float: right;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  left: 90%;
+}
+
+.pull-left img{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.iconD .dropdown-menu{
+  background-color: #F6F7FB;
+  inset: unset !important;
+  position: fixed !important;
+  transform-origin: top right !important;
+  transform: translate(-100%) !important;
+  /* margin-top: -31px !important; */
+  margin-right:  0px !important;
+  margin-bottom:  -16px !important;
+  margin-left: 183px !important;
+}
+
+
+/**************************************** Vista Perfil ****************************************/
+.agent-contact-form-sidebar {
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee;
+}
+
+.sidebar-widget ul {
+  /* padding: 0; */
+  margin: 0;
+  list-style-type: none;
+}
+
+.sidebar-widget .author__contact li {
+  color: #666;
+  /* margin-bottom: 10px; */
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.sidebar-widget .author__contact li span i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #fff;
+  color: #343a40;
+  border-radius: 50%;
+  font-size: 18px;
+  margin-right: 10px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+@media (max-width: 768px) {
+  #btnLlamadasMobile{
+    display: block;
+    margin-left: 10px;
+  }
+  #btnLlamadasDesktop{
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  #btnLlamadasMobile{
+    display: none;
+  }
+  #btnLlamadasDesktop{
+    display: block;
+  }
+}
+
+/* Tablets */
+
+@media (min-width: 801px) {
+  .breakline {
+    display: none;
+  }
+  .buscador_invitaciones {
+    width: 45% !important;
+  }
+}
+@media (max-width: 800px) {
+  .breakline {
+    display: block;
+  }
+  .dashboard-status {
+    height: 90px !important;
+  }
+  .tablaGrupal, .tablaIndividual {
+    width: 100%;
+  }
+  .buscador_invitaciones {
+    width: 100% !important;
+  }
+  .dataTables_filter input {
+    width: 300px !important;
+  }
+}
+@media (max-width: 991px) {
+  .toggle-calls {
+    padding: 6px 10px 6px 10px;
+    /* background-color: blue; */
+  }
+  .iconD {
+    left: 87% !important;
+  }
+  .modal-dialog {
+    max-width: 90% !important;
+  }
+}
+
+.buscador_invitaciones {
+  display: inline-flex;
+}
+

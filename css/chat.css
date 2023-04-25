@@ -1,0 +1,563 @@
+#call-window{
+    display: none;
+}   
+
+#call-window.show-call-window{
+    display: block;
+    height: 200px;
+    margin-bottom: 15px;
+    overflow: inherit;
+    z-index: 15;
+    position: relative;
+}
+
+#call-window .call-ext-img{
+    position: relative;
+    z-index: 3;
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    display:block;
+    margin:auto;
+}
+
+#call-window .call-ext-account{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    opacity: .5;
+}
+
+#call-window .call-ext-name{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#call-window .call-ext-timer{
+    position: relative;
+    z-index: 3;
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 1px 4px 1px #c3c3c3;
+    border-radius: 2px;
+    opacity: 1;
+    font-size: 12px;
+    padding: 1px 5px;
+    color: grey;
+    background-color: #fff;
+}
+
+
+
+#call-window .call-window-wrapper{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#call-window .call-window-wrapper > .row{
+    height: 100%;
+}
+
+#call-window .call-window-wrapper .call-ext-name{
+    padding-top: 20px;
+    font-size: 25px;
+    color: #fff;
+    opacity: .95;
+}
+
+#call-window .call-window-wrapper .call-ext-account{
+    padding-top: 5px;
+    color: #fff;
+    opacity: .85;
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+#active-call-controls{
+    position: absolute;
+    /*bottom: 10px;*/
+    top: 160px;
+    width: max-content;
+}
+
+#active-call-controls > button{
+    margin-right: 18px;
+    transition: all .8s ease-out;
+    position: relative;
+}
+
+#active-call-controls > button:hover{
+    box-shadow: none !important;
+}
+
+#active-call-controls > button > img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+}
+
+#active-call-controls .call-end i{
+    color: var(--white);
+}
+
+#active-call-controls .call-hold i{
+    color: var(--black);
+}
+
+#active-call-controls .call-att-transfer i{
+    color: var(--yellow);;
+}
+
+#active-call-controls .hide-att-view{
+    display: none;
+}
+
+#chat-window{
+    position: absolute !important;
+    top: 0px;
+    height: calc(100% - 20px);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: var(--box-border-radius);
+    overflow: auto;
+    width: 100%;
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
+}
+
+#chat-window.active-call{
+    top: 235px;
+}
+
+.active-call{
+    height: calc(100% - 253px) !important;
+}
+
+.call-controls{
+    float: right;
+}
+
+.call-controls button{
+    margin-left: 10px;
+}
+
+#chat-note{
+
+}
+
+#chat-header{
+    height: 40px;
+    margin-left: -10px;
+    margin-top: -10px;
+    width: 100%;
+    padding: 10px;
+    /*box-shadow: var(--middle-header-box-shadow);*/
+    border-bottom: 1px solid var(--grey);
+    position: relative;
+    background-color: var(--white);
+    z-index: 5;
+}
+
+#chat-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+#chat-name{
+    margin-left: 10px;
+}
+
+#chat-number{
+    margin-left: 10px;
+
+}
+
+#chat-story{
+    height: calc(100% - 120px);
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: auto;
+    margin-right: -10px;
+}
+
+#chat-history{
+    /*height: calc(100% + 20px);*/
+    /*overflow: auto;*/
+    /*margin-right: -10px;*/
+
+}
+
+.pbx-chat-textout, .pbx-chat-textin{
+    position: relative;
+}
+
+.pbx-chat-textout{
+    margin: 5px 5px 5px 0px;
+    text-align: right;
+}
+
+.pbx-chat-textin .pbx-chat-text{
+    background-color: #d1bce4;
+    /*box-shadow: -2px 0px 12px 0px #e9ccf3;*/
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    max-width: 90%;
+    width: max-content;
+    padding: 5px;
+    position: relative;
+}
+
+.pbx-chat-textout img, .pbx-chat-textin img{
+    border-radius: var(--box-border-radius);
+    max-width: 70%;
+    margin-right: 8px;
+    border: 1px solid var(--grey);
+}
+
+.pbx-chat-textin .pbx-chat-text:after{
+    border-radius: 3px;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-left: -11px;
+    border-width: 14px 12px; 
+    border-style: solid;
+    border-color: #d1bce4 transparent transparent transparent;
+}
+
+.pbx-chat-textin{
+    margin: 5px 0px 5px 10px ;
+}
+
+.pbx-chat-textout .pbx-chat-text{
+    background-color: #dde2f3;
+    /*box-shadow: 2px 0px 12px 0px #ccdff3;*/
+    border-radius: 5px;
+    max-width: 90%;
+    width: max-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: 10px;
+    position: relative;
+}
+
+.pbx-chat-textout .pbx-chat-text:after{
+    border-radius: 3px;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-right: -11px;
+    border-width: 14px 12px; 
+    border-style: solid;
+    border-color: #dde2f3 transparent transparent transparent;
+}
+
+.pbx-chat-note{
+    /*margin: 20px 30px 20px 20px;*/
+    margin: 20px 12px 20px 10px;
+}
+
+.pbx-chat-note .pbx-chat-text{
+    padding: 10px;
+    background-color: var(--yellow);
+    /*box-shadow: 2px 0px 12px 0px #d8d099;*/
+    border-radius: 5px;
+}
+
+.pbx-chat-text{
+    overflow-wrap: break-word;
+}
+
+
+.pbx-chat-time{
+    font-size: 8px;
+    opacity: .3;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+#chat-input{
+    height: 65px;
+    position: relative;
+    width: 100%;
+}
+
+#chat-input form{
+    width: 100%;
+}
+
+form#chat-text{
+    position: absolute;
+    bottom: 0px;
+    margin: 0px !important;
+}
+
+form#chat-text textarea{
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-top: 9px;
+    padding-bottom: 4px;
+    height: 37px;
+}
+
+form#chat-text textarea:focus{
+    outline: none;
+}
+
+form#chat-text{
+    /*height: 35px;*/
+    background: var(--grey);
+    border: none;
+    border-radius: 5px;
+    transition: all .5s;
+    width: calc(100% - 4px);
+}
+
+form#chat-text, form#chat-note{
+    display:flex;
+    flex-direction:row;
+    /*border:1px solid grey;*/
+    padding:2px;
+}
+
+form#chat-text textarea, form#chat-note textarea{
+    flex-grow:2;
+    border:none;
+    padding-right: 35px;
+}
+
+form#chat-text button, form#chat-note button{
+    color:blue;
+}
+
+form#chat-text button{
+    border: none;
+    background-color: transparent;
+}
+
+form#chat-text button i{
+    vertical-align: middle;
+}
+
+.chat-user-info{
+    width: calc(50% - 40px);
+}
+
+/*Chat note*/
+#chat-note{
+    position: absolute;
+    left: 0px;
+    width: calc(100%);
+    background-color: var(--yellow);
+    z-index: 1;
+    top: -102px;
+    transition: .4s all;
+}
+
+#chat-note.show{
+    top: 60px;
+}
+
+#chat-note-form{
+    padding-left: 10px;
+    width: calc(100% - 20px);
+    margin-bottom: 0px;
+}
+
+#chat-note-form textarea{
+    border: none;
+    background-color: #ffffff38;
+    width: calc(100% - 10px);
+    margin: 0px;
+    padding: 0px;
+    border-radius: 4px;
+    padding: 5px;
+    color: black;
+}
+
+#chat-note-form textarea:active, #chat-note-form textarea:focus{
+    outline: none;
+}
+
+#chat-note-form button{
+    height: 35px;
+    margin-top: 6px;
+}
+
+#chat-note-form .segmented-control input[type='radio']:checked + label{
+    background-color: #fff !important;
+    color: #000;
+}
+
+#chat-note-form .segmented-control input[type='radio'] + label{
+    /*background-color: #fff !important;*/
+    color: #000;
+}
+
+#chat-image-input{
+    display: none;
+}
+
+#chat-image-upload{
+    /*position: absolute;*/
+    /*top: -10px;*/
+    
+  /*  cursor: pointer;
+    color: var(--grey);*/
+}
+
+#chat-image-upload .button{
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 15px;
+    background-color: var(--blue);
+    color: var(--white);
+    width: max-content;
+    border-radius: 5px;
+    padding: 6px 20px 6px 20px;
+    cursor: pointer;
+}
+
+
+#chat-image-upload .button:hover{
+      background-color: var(--blue-hover);
+    border-color: var(--blue-hover);;
+}
+
+#chat-image-preview > span > img{
+    max-width: 100%;
+    max-height: 300px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+#chat-image-container{
+    position: relative;
+    height: 0px;
+    background: var(--grey);
+    border-radius: var(--box-border-radius);
+}
+
+#chat-image-send > span{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #00000040;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#chat-image-send > span > i{
+    color: #ffffffde
+}
+
+#chat-image-send:hover > span{
+    background-color: #00000060;
+} 
+
+#chat-image-send:hover > span > i{
+    color: #ffffffed;
+}
+
+#open-image-modal{
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.5;
+        right: 10px;
+    top: calc(50% - 12px);
+}
+
+#open-image-modal:hover{
+    opacity: 1;
+}
+
+#chat-image-remove{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#chat-image-remove:hover{
+    opacity: 1;
+}
+
+.pbx-chat-text{
+    transition: padding 1s ease-out;
+}
+
+.pbx-chat-textin .pbx-chat-menu, .pbx-chat-textout .pbx-chat-menu{
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.pbx-chat-textout .pbx-chat-menu{    
+    right: 10px;
+}
+
+.pbx-chat-textin .pbx-chat-menu{
+    left: 0px;
+}
+
+.pbx-chat-menu{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translate(0%, -50%);
+    margin-top: -8px;
+}
+
+.pbx-chat-menu i{
+    font-size: 14px;
+}
+
+.pbx-chat-textin:hover .pbx-chat-text{
+    padding-left: 20px;
+
+}
+
+.pbx-chat-textout:hover .pbx-chat-text{
+    padding-right: 20px;
+}
+
+.pbx-chat-textin:hover .pbx-chat-menu{
+    display: block;
+    opacity: 1;
+}
+
+.pbx-chat-textout:hover .pbx-chat-menu{
+    display: block;
+    opacity: 1;
+}
